@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\view\\frmcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\usuario\\source\\repos\\dad\\dad_ecostuff\\view\\frmcadastro.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadastro.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\usuario\\source\\repos\\dad\\dad_ecostuff\\view\\frmcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\view\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\forminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmCadastro.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Source\\Repos\\DAD\\DAD_ecostuff\\View\\FrmCadastro.Designer.cs",
+              "RelativeDocumentMoniker": "View\\FrmCadastro.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Source\\Repos\\DAD\\DAD_ecostuff\\View\\FrmCadastro.Designer.cs",
+              "RelativeToolTip": "View\\FrmCadastro.Designer.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwIkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T00:47:34.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmCadastro.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadastro.cs",
+              "RelativeDocumentMoniker": "View\\FrmCadastro.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadastro.cs",
+              "RelativeToolTip": "View\\FrmCadastro.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwE8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T22:08:12.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmCadastro.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadastro.cs",
+              "RelativeDocumentMoniker": "View\\FrmCadastro.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadastro.cs [Design]",
+              "RelativeToolTip": "View\\FrmCadastro.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T21:32:06.276Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormInicio.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\View\\FormInicio.cs",
+              "RelativeDocumentMoniker": "View\\FormInicio.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\DAD\\DAD_ecostuff\\View\\FormInicio.cs [Design]",
+              "RelativeToolTip": "View\\FormInicio.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T21:31:57.743Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

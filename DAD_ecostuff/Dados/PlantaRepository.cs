@@ -18,7 +18,7 @@ namespace Dados
                 MySqlCommand cmd = new MySqlCommand
                 {
                     Connection = Conexao.SqlCon,
-                    CommandText = "INSERT INTO PLANTA( NOME, OBSERVACOES, DATA_DA_VERIFICACAO, CICLO_DE_AGUA, CICLO_DE_ILUMINACAO, TIPO_DE_SOLO , FERTILIZANTE) values ( @pNome, @pObservacoes, @pDatadeverificacao, @pCiclodeagua, @pCicloiluminacao, @pTipodesolo, @pFertilizante)",
+                    CommandText = "INSERT INTO PLANTA( NOME, OBSERVACOES, DATA_DA_VERIFICACAO, CICLO_DE_AGUA, CICLO_DE_ILUMINACAO, TIPO_DE_SOLO) values ( @pNome, @pObservacoes, @pDatadeverificacao, @pCiclodeagua, @pCicloiluminacao, @pTipodesolo)",
                     CommandType = System.Data.CommandType.Text
 
                 };
@@ -29,7 +29,7 @@ namespace Dados
                 cmd.Parameters.AddWithValue("@pCiclodeagua", planta.Ciclodeagua);
                 cmd.Parameters.AddWithValue("@pCicloiluminacao", planta.Cicloiluminacao);
                 cmd.Parameters.AddWithValue("@pTipodesolo", planta.Tiposolo);
-                cmd.Parameters.AddWithValue("@pFertilizante", planta.Fertilizante);
+               
 
 
                 resp = cmd.ExecuteNonQuery() == 1 ? "SUCESSO" : "FALHA";
@@ -63,7 +63,6 @@ namespace Dados
                                    "CICLO_DE_AGUA = @pCiclodeagua, " +
                                    "CICLO_DE_ILUMINACAO = @pCicloiluminacao, " +
                                    "TIPO_DE_SOLO = @pTipodesolo, " +
-                                   "FERTILIZANTE = @pFertilizante " +
                                    "WHERE CODIGO = @pCodigo";
 
 
@@ -76,7 +75,6 @@ namespace Dados
                     sqlCmd.Parameters.AddWithValue("@pCiclodeagua", planta.Ciclodeagua);
                     sqlCmd.Parameters.AddWithValue("@pCicloiluminacao", planta.Cicloiluminacao);
                     sqlCmd.Parameters.AddWithValue("@pTipodesolo", planta.Tiposolo);
-                    sqlCmd.Parameters.AddWithValue("@pFertilizante", planta.Fertilizante);
                     sqlCmd.Parameters.AddWithValue("@pCodigo", planta.Codigo);
 
 

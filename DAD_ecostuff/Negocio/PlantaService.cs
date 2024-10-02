@@ -16,13 +16,13 @@ namespace Negocio
         private string nome;
         private string observacoes;
         private DateTime datadaverificacao;
-        private string ciclodeAgua;
-        private string cicloiluminista;
+        private int ciclodeAgua;
+        private int cicloiluminista;
         private string tipodeSolo;
-        private string fertilizante;
+  
         private int? codigo;
 
-        public string Update(string nome, string observacoes, DateTime datadeverificacao, string ciclodeagua, string cicloiluminista, string tipodesolo, string fertilizante, int? codigo)
+        public string Update(string nome, string observacoes, DateTime datadeverificacao, int ciclodeagua, int cicloiluminista, string tipodesolo, int? codigo)
         {
             // Insira as validações e regras de negócio aqui
             // Por exemplo, verificar se o email já está cadastrado
@@ -36,7 +36,6 @@ namespace Negocio
                 Ciclodeagua = ciclodeagua,
                 Cicloiluminacao = cicloiluminista,
                 Tiposolo = tipodesolo,
-                Fertilizante = fertilizante
                 //mano to com medo
             };
 
