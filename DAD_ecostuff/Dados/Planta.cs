@@ -7,6 +7,7 @@ namespace Dados
 
         private int? codigo;
         private string nome;
+        private string nomecientifico;
         private string observacoes;
         private DateTime datadeverificacao;
         private int ciclodeagua;
@@ -27,6 +28,8 @@ namespace Dados
 
         public string Tiposolo { get => tiposolo; set => tiposolo = value; }
 
-  
+        public string Nomecientifico { get => nomecientifico; set => nomecientifico = value; }
+
+
     }
 }

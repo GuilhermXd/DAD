@@ -18,12 +18,13 @@ namespace Dados
                 MySqlCommand cmd = new MySqlCommand
                 {
                     Connection = Conexao.SqlCon,
-                    CommandText = "INSERT INTO PLANTA( NOME, OBSERVACOES, DATA_DA_VERIFICACAO, CICLO_DE_AGUA, CICLO_DE_ILUMINACAO, TIPO_DE_SOLO) values ( @pNome, @pObservacoes, @pDatadeverificacao, @pCiclodeagua, @pCicloiluminacao, @pTipodesolo)",
+                    CommandText = "INSERT INTO PLANTA( NOME,NOME_CIENTIFICO, OBSERVACOES, DATA_DA_VERIFICACAO, CICLO_DE_AGUA, CICLO_DE_ILUMINACAO, TIPO_DE_SOLO) values ( @pNome, @pNomeCientifico, @pObservacoes, @pDatadeverificacao, @pCiclodeagua, @pCicloiluminacao, @pTipodesolo)",
                     CommandType = System.Data.CommandType.Text
 
                 };
 
                 cmd.Parameters.AddWithValue("pNome", planta.Nome);
+                cmd.Parameters.AddWithValue("pNomeCientifico", planta.Nomecientifico);
                 cmd.Parameters.AddWithValue("pObservacoes", planta.Observacoes);
                 cmd.Parameters.AddWithValue("@pDatadeverificacao", planta.Datadeverificacao);
                 cmd.Parameters.AddWithValue("@pCiclodeagua", planta.Ciclodeagua);
@@ -58,6 +59,7 @@ namespace Dados
 
                 string updateSql = "UPDATE PLANTA SET " +
                                    "NOME = @pNome, " +
+                                   "NOME_CIENTIFICO =@pNomeCientifico"+
                                    "OBSERVACOES = @pObservacoes, " +
                                    "DATA_DA_VERIFICACAO = @pDatadeverificacao, " +
                                    "CICLO_DE_AGUA = @pCiclodeagua, " +
@@ -70,6 +72,7 @@ namespace Dados
                 {
 
                     sqlCmd.Parameters.AddWithValue("@pNome", planta.Nome);
+                    sqlCmd.Parameters.AddWithValue("pNomeCientifico", planta.Nomecientifico);
                     sqlCmd.Parameters.AddWithValue("@pObservacoes", planta.Observacoes);
                     sqlCmd.Parameters.AddWithValue("@pDatadeverificacao", planta.Datadeverificacao);
                     sqlCmd.Parameters.AddWithValue("@pCiclodeagua", planta.Ciclodeagua);

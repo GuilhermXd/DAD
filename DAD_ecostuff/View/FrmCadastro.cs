@@ -30,6 +30,7 @@ namespace View
             int ciclodeagua = 0;
             int cicloiluminacao = 0;
             string tiposolo = txtTipodeSolo.Text;
+            string nomecientifico = txtNomeCientifico.Text;
 
             string resultado;
             if(!string.IsNullOrEmpty(txtCicloAgua.Text))
@@ -37,10 +38,10 @@ namespace View
             if (!string.IsNullOrEmpty(txtCicloIluminacao.Text))
                 cicloiluminacao = int.Parse(txtCicloIluminacao.Text);
 
-            resultado = _plantaService.Update(nome, observacoes, datadeverificacao, ciclodeagua, cicloiluminacao, tiposolo, null);
+            resultado = _plantaService.Update(nome, nomecientifico, observacoes, datadeverificacao, ciclodeagua, cicloiluminacao, tiposolo, null);
             if (resultado == "SUCESSO")
             {
-                MessageBox.Show("FUNCIONOU CÃO");
+                MessageBox.Show("Adicionado com Sucesso!","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
 
         }
@@ -53,18 +54,15 @@ namespace View
         /*-------------------------------*/
 
         /* Focus */
-        String textoAntigo = "";
+        string textoAntigo = "";
         TextBox textBox;
-        bool preenchido = false;
+        
         private void TextBox_Enter(object sender, EventArgs e)
-        {
-            if (!preenchido)
-            {
-                textBox = sender as TextBox;
-                textBox.ForeColor = System.Drawing.Color.Black;
-                textoAntigo = textBox.Text;
-                textBox.Clear();
-            }
+        { 
+            textBox = sender as TextBox;
+            textBox.ForeColor = System.Drawing.Color.Black;
+            textoAntigo = textBox.Text;
+            textBox.Clear();
         }
 
         private void Textbox_Leave(object sender, EventArgs e)
@@ -76,8 +74,15 @@ namespace View
                 textBox.ForeColor= System.Drawing.Color.Gray;
                 textoAntigo = "";
             }
-            else
-                preenchido=true;
+            
+        }
+
+        private void txtObservacoes_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+
         }
     }
 }

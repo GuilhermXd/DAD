@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace View
 {
-    public partial class FormInicio : Form
+    public partial class FrmInicio : Form
     {
-        public FormInicio()
+        public FrmInicio()
         {
             InitializeComponent();
             FrmCadastro frmCadastro = new FrmCadastro();
@@ -27,6 +27,19 @@ namespace View
             frmCadastro.MdiParent = this;
             frmCadastro.Size = frmCadastro.MdiParent.Size;
             frmCadastro.Show();
+        }
+
+        private void ediçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ediçãoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmConsulta frmConsulta = new FrmConsulta();
+            frmConsulta.MdiParent = this;
+            
+            frmConsulta.Show();
         }
     }
 }
