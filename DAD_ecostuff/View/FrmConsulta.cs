@@ -41,16 +41,31 @@ namespace View
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            DialogResult msg = MessageBox.Show("Deseja confirmar exclusão?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (msg == DialogResult.Yes)
+            string resultado;
+            string msg;
+            DialogResult result= MessageBox.Show("Deseja confirmar exclusão?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
             {
-                _plantaService.Remove(codigo);
+                resultado = _plantaService.Remove(codigo);
                 atualiza();
+                if (resultado != "SUCESSO") {
+                    msg = "A Operação Falhou";
+                }
+                else
+                {
+                    msg = "A operação foi um Sucesso!";
+                }
+                MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (result == DialogResult.No) 
+            {
+                msg = "A operação foi Cancelada!";
+                MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-            else {
-                msg = MessageBox.Show("Exclusão cancelada!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+
+
+
         }
 
         int codigo;
