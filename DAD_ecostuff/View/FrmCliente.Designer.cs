@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,6 +42,17 @@
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtAdiciona = new System.Windows.Forms.Button();
+            this.dgCliente = new System.Windows.Forms.DataGridView();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpfCnpjDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -149,11 +161,76 @@
             this.txtAdiciona.UseVisualStyleBackColor = true;
             this.txtAdiciona.Click += new System.EventHandler(this.txtAdiciona_Click);
             // 
+            // dgCliente
+            // 
+            this.dgCliente.AutoGenerateColumns = false;
+            this.dgCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigoDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.cpfCnpjDataGridViewTextBoxColumn,
+            this.rgDataGridViewTextBoxColumn,
+            this.celularDataGridViewTextBoxColumn,
+            this.senhaDataGridViewTextBoxColumn});
+            this.dgCliente.DataSource = this.clienteBindingSource;
+            this.dgCliente.Location = new System.Drawing.Point(439, 126);
+            this.dgCliente.Name = "dgCliente";
+            this.dgCliente.Size = new System.Drawing.Size(742, 226);
+            this.dgCliente.TabIndex = 13;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataSource = typeof(Dados.Cliente);
+            // 
+            // codigoDataGridViewTextBoxColumn
+            // 
+            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // cpfCnpjDataGridViewTextBoxColumn
+            // 
+            this.cpfCnpjDataGridViewTextBoxColumn.DataPropertyName = "Cpf_Cnpj";
+            this.cpfCnpjDataGridViewTextBoxColumn.HeaderText = "Cpf_Cnpj";
+            this.cpfCnpjDataGridViewTextBoxColumn.Name = "cpfCnpjDataGridViewTextBoxColumn";
+            // 
+            // rgDataGridViewTextBoxColumn
+            // 
+            this.rgDataGridViewTextBoxColumn.DataPropertyName = "Rg";
+            this.rgDataGridViewTextBoxColumn.HeaderText = "Rg";
+            this.rgDataGridViewTextBoxColumn.Name = "rgDataGridViewTextBoxColumn";
+            // 
+            // celularDataGridViewTextBoxColumn
+            // 
+            this.celularDataGridViewTextBoxColumn.DataPropertyName = "Celular";
+            this.celularDataGridViewTextBoxColumn.HeaderText = "Celular";
+            this.celularDataGridViewTextBoxColumn.Name = "celularDataGridViewTextBoxColumn";
+            // 
+            // senhaDataGridViewTextBoxColumn
+            // 
+            this.senhaDataGridViewTextBoxColumn.DataPropertyName = "Senha";
+            this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
+            this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
+            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1229, 618);
+            this.Controls.Add(this.dgCliente);
             this.Controls.Add(this.txtAdiciona);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtCelular);
@@ -169,6 +246,9 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCliente";
             this.Text = "FrmCliente";
+            this.Load += new System.EventHandler(this.FrmCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +269,14 @@
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button txtAdiciona;
+        private System.Windows.Forms.DataGridView dgCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpfCnpjDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rgDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn celularDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn senhaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
     }
 }

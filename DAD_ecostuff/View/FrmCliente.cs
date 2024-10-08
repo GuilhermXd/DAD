@@ -14,12 +14,24 @@ namespace View
     public partial class FrmCliente : Form
     {
         private readonly  ClienteService clienteService;
+        DataTable dtCliente = new DataTable();
         public FrmCliente()
         {
             InitializeComponent();
             clienteService = new ClienteService();
         }
 
+        private void carregaGridView()
+        {
+            dtCliente = clienteService.getAll();
+            dgCliente.DataSource = dtCliente;
+            //dgPlanta.DataSource = _plantaService.getAll();
+            dgCliente.Refresh();
+        }
+        private void atualiza()
+        {
+            dgCliente.DataSource = clienteService.getAll();
+        }
         private void txtAdiciona_Click(object sender, EventArgs e)
         {
             int? codigo;
@@ -38,6 +50,11 @@ namespace View
                 MessageBox.Show("Adicionado com Sucesso!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+        }
+
+        private void FrmCliente_Load(object sender, EventArgs e)
+        {
+            carregaGridView();
         }
     } 
 

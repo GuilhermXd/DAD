@@ -82,5 +82,10 @@ namespace View
             codigo = int.Parse(id);
             dgPlanta.Refresh();
         }
+
+        private void dgPlanta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
