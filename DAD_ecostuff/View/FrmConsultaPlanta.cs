@@ -11,11 +11,11 @@ using Negocio;
 
 namespace View
 {
-    public partial class FrmConsulta : Form
+    public partial class FrmConsultaPlanta : Form
     {
         private readonly PlantaService _plantaService;
         private DataTable tblPlanta = new DataTable();
-        public FrmConsulta()
+        public FrmConsultaPlanta()
         {
             InitializeComponent();
             _plantaService = new PlantaService();

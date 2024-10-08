@@ -36,7 +36,7 @@ namespace View
 
         private void ediçãoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            FrmConsulta frmConsulta = new FrmConsulta();
+            FrmConsultaPlanta frmConsulta = new FrmConsultaPlanta();
             frmConsulta.MdiParent = this;
             
             frmConsulta.Show();

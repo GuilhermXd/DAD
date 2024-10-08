@@ -1,7 +1,7 @@
 ﻿
 namespace View
 {
-    partial class FrmConsulta
+    partial class FrmConsultaPlanta
     {
         /// <summary>
         /// Required designer variable.
@@ -35,12 +35,12 @@ namespace View
             this.plantaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgPlanta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plantaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -57,20 +57,23 @@ namespace View
             // 
             // dgPlanta
             // 
+            this.dgPlanta.AllowUserToAddRows = false;
+            this.dgPlanta.AllowUserToDeleteRows = false;
             this.dgPlanta.AutoGenerateColumns = false;
             this.dgPlanta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgPlanta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18});
             this.dgPlanta.DataSource = this.plantaBindingSource;
             this.dgPlanta.Location = new System.Drawing.Point(23, 23);
             this.dgPlanta.Name = "dgPlanta";
+            this.dgPlanta.ReadOnly = true;
             this.dgPlanta.Size = new System.Drawing.Size(844, 150);
             this.dgPlanta.TabIndex = 2;
             this.dgPlanta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPlanta_CellClick_1);
@@ -91,43 +94,43 @@ namespace View
             this.dataGridViewTextBoxColumn7.HeaderText = "Nome";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Nome_cientifico";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Nomecientifico";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "Observacoes";
             this.dataGridViewTextBoxColumn8.HeaderText = "Observacoes";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
-            // dataGridViewTextBoxColumn9
+            // dataGridViewTextBoxColumn14
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Data_da_verificacao";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Datadeverificacao";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Data_da_verificacao";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Datadeverificacao";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
             // 
-            // dataGridViewTextBoxColumn10
+            // dataGridViewTextBoxColumn15
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Ciclo_de_agua";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Ciclodeagua";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Ciclo_de_agua";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Ciclodeagua";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             // 
-            // dataGridViewTextBoxColumn11
+            // dataGridViewTextBoxColumn16
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Ciclo_de_iluminacao";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Cicloiluminacao";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Ciclo_de_iluminacao";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Cicloiluminacao";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             // 
-            // dataGridViewTextBoxColumn12
+            // dataGridViewTextBoxColumn17
             // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Tipo_de_solo";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Tiposolo";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Tipo_de_solo";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Tiposolo";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             // 
-            // FrmConsulta
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Nome_cientifico";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Nomecientifico";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // FrmConsultaPlanta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +138,7 @@ namespace View
             this.ControlBox = false;
             this.Controls.Add(this.dgPlanta);
             this.Controls.Add(this.btnExcluir);
-            this.Name = "FrmConsulta";
+            this.Name = "FrmConsultaPlanta";
             this.ShowIcon = false;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmConsulta_Load);
@@ -161,14 +164,19 @@ namespace View
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.DataGridView dgPlanta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.BindingSource plantaBindingSource;
     }
 }
