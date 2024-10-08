@@ -93,6 +93,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteRepository.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="Planta.cs" />
     <Compile Include="PlantaRepository.cs" />
