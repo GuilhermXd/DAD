@@ -226,7 +226,7 @@ namespace View
             // 
             // plantaBindingSource
             // 
-            this.plantaBindingSource.DataSource = typeof(Dados.Planta);
+            
             // 
             // FrmCadastro
             // 
