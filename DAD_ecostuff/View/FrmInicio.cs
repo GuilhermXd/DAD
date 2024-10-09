@@ -10,7 +10,7 @@ namespace View
             InitializeComponent();
             FrmCadastro frmCadastro = new FrmCadastro();
             frmCadastro.MdiParent = this;
-            frmCadastro.Size = frmCadastro.MdiParent.Size;
+            //frmCadastro.Size = frmCadastro.MdiParent.Size;
             frmCadastro.Show();
         }
 

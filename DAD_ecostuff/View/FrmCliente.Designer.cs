@@ -51,6 +51,7 @@
             this.rgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -178,6 +179,7 @@
             this.dgCliente.Name = "dgCliente";
             this.dgCliente.Size = new System.Drawing.Size(742, 226);
             this.dgCliente.TabIndex = 13;
+            this.dgCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCliente_CellClick);
             // 
             // clienteBindingSource
             // 
@@ -225,11 +227,22 @@
             this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
             this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(168, 218);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(89, 35);
+            this.btnExcluir.TabIndex = 14;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1229, 618);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.dgCliente);
             this.Controls.Add(this.txtAdiciona);
             this.Controls.Add(this.txtSenha);
@@ -278,5 +291,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn celularDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn senhaDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource clienteBindingSource;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }

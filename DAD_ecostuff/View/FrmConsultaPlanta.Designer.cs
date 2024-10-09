@@ -32,10 +32,15 @@ namespace View
             this.components = new System.ComponentModel.Container();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.dgPlanta = new System.Windows.Forms.DataGridView();
+            this.plantaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nomecientifico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plantaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Datadeverificacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ciclodeagua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cicloiluminacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tiposolo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgPlanta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plantaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +64,12 @@ namespace View
             this.dgPlanta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
+            this.Nomecientifico,
+            this.dataGridViewTextBoxColumn8,
+            this.Datadeverificacao,
+            this.Ciclodeagua,
+            this.Cicloiluminacao,
+            this.Tiposolo});
             this.dgPlanta.DataSource = this.plantaBindingSource;
             this.dgPlanta.Location = new System.Drawing.Point(23, 23);
             this.dgPlanta.Name = "dgPlanta";
@@ -68,6 +78,10 @@ namespace View
             this.dgPlanta.TabIndex = 2;
             this.dgPlanta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPlanta_CellClick_1);
             this.dgPlanta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPlanta_CellContentClick);
+            // 
+            // plantaBindingSource
+            // 
+            this.plantaBindingSource.DataSource = typeof(Dados.Planta);
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -83,6 +97,13 @@ namespace View
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
+            // Nomecientifico
+            // 
+            this.Nomecientifico.DataPropertyName = "nome_cientifico";
+            this.Nomecientifico.HeaderText = "Nomecientifico";
+            this.Nomecientifico.Name = "Nomecientifico";
+            this.Nomecientifico.ReadOnly = true;
+            // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "Observacoes";
@@ -90,9 +111,33 @@ namespace View
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
-            // plantaBindingSource
+            // Datadeverificacao
             // 
-            this.plantaBindingSource.DataSource = typeof(Dados.Planta);
+            this.Datadeverificacao.DataPropertyName = "Data_da_verificacao";
+            this.Datadeverificacao.HeaderText = "Datadeverificacao";
+            this.Datadeverificacao.Name = "Datadeverificacao";
+            this.Datadeverificacao.ReadOnly = true;
+            // 
+            // Ciclodeagua
+            // 
+            this.Ciclodeagua.DataPropertyName = "Ciclo_de_agua";
+            this.Ciclodeagua.HeaderText = "Ciclodeagua";
+            this.Ciclodeagua.Name = "Ciclodeagua";
+            this.Ciclodeagua.ReadOnly = true;
+            // 
+            // Cicloiluminacao
+            // 
+            this.Cicloiluminacao.DataPropertyName = "Ciclo_de_iluminacao";
+            this.Cicloiluminacao.HeaderText = "Cicloiluminacao";
+            this.Cicloiluminacao.Name = "Cicloiluminacao";
+            this.Cicloiluminacao.ReadOnly = true;
+            // 
+            // Tiposolo
+            // 
+            this.Tiposolo.DataPropertyName = "Tipo_de_solo";
+            this.Tiposolo.HeaderText = "Tiposolo";
+            this.Tiposolo.Name = "Tiposolo";
+            this.Tiposolo.ReadOnly = true;
             // 
             // FrmConsultaPlanta
             // 
@@ -133,14 +178,19 @@ namespace View
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.BindingSource plantaBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nomecientifico;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Datadeverificacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ciclodeagua;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cicloiluminacao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tiposolo;
     }
 }
