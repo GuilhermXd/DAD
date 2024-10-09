@@ -270,3 +270,4 @@ C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.exe
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.pdb
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.FrmConsultaPlanta.resources
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCliente.resources
+C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.TesteIncioBonito.resources

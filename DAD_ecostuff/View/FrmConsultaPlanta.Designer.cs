@@ -32,17 +32,19 @@ namespace View
             this.components = new System.ComponentModel.Container();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.dgPlanta = new System.Windows.Forms.DataGridView();
-            this.plantaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nomecientifico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Datadeverificacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ciclodeagua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cicloiluminacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiposolo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plantaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgPlanta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plantaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExcluir
@@ -79,37 +81,12 @@ namespace View
             this.dgPlanta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPlanta_CellClick_1);
             this.dgPlanta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPlanta_CellContentClick);
             // 
-            // plantaBindingSource
-            // 
-            this.plantaBindingSource.DataSource = typeof(Dados.Planta);
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Codigo";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Codigo";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Nome";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
             // Nomecientifico
             // 
             this.Nomecientifico.DataPropertyName = "nome_cientifico";
             this.Nomecientifico.HeaderText = "Nomecientifico";
             this.Nomecientifico.Name = "Nomecientifico";
             this.Nomecientifico.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Observacoes";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Observacoes";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // Datadeverificacao
             // 
@@ -139,6 +116,43 @@ namespace View
             this.Tiposolo.Name = "Tiposolo";
             this.Tiposolo.ReadOnly = true;
             // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Codigo";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Codigo";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Observacoes";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Observacoes";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // plantaBindingSource
+            // 
+            this.plantaBindingSource.DataSource = typeof(Dados.Planta);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::View.Properties.Resources.Design_sem_nome;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1043, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // FrmConsultaPlanta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,12 +161,14 @@ namespace View
             this.ControlBox = false;
             this.Controls.Add(this.dgPlanta);
             this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FrmConsultaPlanta";
             this.ShowIcon = false;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmConsulta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgPlanta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.plantaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,5 +208,6 @@ namespace View
         private System.Windows.Forms.DataGridViewTextBoxColumn Ciclodeagua;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cicloiluminacao;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tiposolo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -130,6 +130,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TesteIncioBonito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesteIncioBonito.Designer.cs">
+      <DependentUpon>TesteIncioBonito.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +161,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TesteIncioBonito.resx">
+      <DependentUpon>TesteIncioBonito.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Dados.Cliente.datasource" />
     <None Include="Properties\DataSources\Dados.Planta.datasource" />
@@ -184,6 +193,27 @@
       <Project>{2916c34c-4dd9-4e6b-b6ab-f75d05bced02}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_16dp_E8EAED_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_16dp_000000_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16dp_000000_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[removal.ai]_73375559-ff69-458c-b5bb-e3f5ef4f86e9-design-sem-nome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
