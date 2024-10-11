@@ -73,6 +73,17 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Apresentação_de_Negócios_Plano_de_Negócios_Geométrico_Corporativo_Verde_Preto_e_Branco {
+            get {
+                object obj = ResourceManager.GetObject("Apresentação de Negócios Plano de Negócios Geométrico Corporativo Verde Preto e B" +
+                        "ranco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close_16dp_000000_FILL0_wght400_GRAD0_opsz20 {
             get {
                 object obj = ResourceManager.GetObject("close_16dp_000000_FILL0_wght400_GRAD0_opsz20", resourceCulture);
@@ -206,6 +217,16 @@ namespace View.Properties {
         internal static System.Drawing.Bitmap icons8_pesquisar_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-pesquisar-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pesquisar_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-pesquisar-501", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

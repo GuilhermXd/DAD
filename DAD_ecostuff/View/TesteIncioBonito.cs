@@ -51,5 +51,10 @@ namespace View
             FrmCliente frmCadCliente = new FrmCliente();
             OpenFormInPanel(frmCadCliente,pForm);
         }
+
+        private void pForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

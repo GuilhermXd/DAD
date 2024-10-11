@@ -31,12 +31,12 @@
             this.pMenu = new System.Windows.Forms.Panel();
             this.pConfig = new System.Windows.Forms.Panel();
             this.pForm = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnOff = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pMenu.SuspendLayout();
             this.pConfig.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,22 +63,32 @@
             this.pConfig.Dock = System.Windows.Forms.DockStyle.Top;
             this.pConfig.Location = new System.Drawing.Point(200, 0);
             this.pConfig.Name = "pConfig";
-            this.pConfig.Size = new System.Drawing.Size(1184, 43);
+            this.pConfig.Size = new System.Drawing.Size(1350, 43);
             this.pConfig.TabIndex = 1;
             // 
             // pForm
             // 
-            this.pForm.Location = new System.Drawing.Point(200, 38);
+            this.pForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pForm.Location = new System.Drawing.Point(200, 43);
             this.pForm.Name = "pForm";
-            this.pForm.Size = new System.Drawing.Size(1184, 723);
+            this.pForm.Size = new System.Drawing.Size(1350, 718);
             this.pForm.TabIndex = 3;
+            this.pForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pForm_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(90)))), ((int)(((byte)(80)))));
+            this.panel1.Location = new System.Drawing.Point(0, 684);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 77);
+            this.panel1.TabIndex = 0;
             // 
             // btnOff
             // 
             this.btnOff.FlatAppearance.BorderSize = 0;
             this.btnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOff.Image = global::View.Properties.Resources.icons8_desligar_32;
-            this.btnOff.Location = new System.Drawing.Point(1135, 0);
+            this.btnOff.Location = new System.Drawing.Point(1301, 0);
             this.btnOff.Name = "btnOff";
             this.btnOff.Size = new System.Drawing.Size(49, 40);
             this.btnOff.TabIndex = 2;
@@ -137,19 +147,11 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(90)))), ((int)(((byte)(80)))));
-            this.panel1.Location = new System.Drawing.Point(0, 684);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 77);
-            this.panel1.TabIndex = 0;
-            // 
             // TesteIncioBonito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.ClientSize = new System.Drawing.Size(1550, 761);
             this.Controls.Add(this.pForm);
             this.Controls.Add(this.pConfig);
             this.Controls.Add(this.pMenu);

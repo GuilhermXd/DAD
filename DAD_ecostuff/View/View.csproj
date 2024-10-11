@@ -251,5 +251,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-x-25.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apresentação de Negócios Plano de Negócios Geométrico Corporativo Verde Preto e Branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesquisar-501.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
