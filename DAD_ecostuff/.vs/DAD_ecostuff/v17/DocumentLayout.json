@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\testeinciobonito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\testeinciobonito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\testeinciobonito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\testeinciobonito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{890D5A5E-46A2-4AF2-B29E-0A40CDB21F74}|Dados\\Dados.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\dados\\endereco_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890D5A5E-46A2-4AF2-B29E-0A40CDB21F74}|Dados\\Dados.csproj|solutionrelative:dados\\endereco_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2916C34C-4DD9-4E6B-B6AB-F75D05BCED02}|Negocio\\Negocio.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\negocio\\endereco_clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2916C34C-4DD9-4E6B-B6AB-F75D05BCED02}|Negocio\\Negocio.csproj|solutionrelative:negocio\\endereco_clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2916C34C-4DD9-4E6B-B6AB-F75D05BCED02}|Negocio\\Negocio.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\negocio\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2916C34C-4DD9-4E6B-B6AB-F75D05BCED02}|Negocio\\Negocio.csproj|solutionrelative:negocio\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,65 +42,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TesteIncioBonito.cs",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\TesteIncioBonito.cs",
-              "RelativeDocumentMoniker": "View\\TesteIncioBonito.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\TesteIncioBonito.cs",
-              "RelativeToolTip": "View\\TesteIncioBonito.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwDgAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Endereco_Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\Dados\\Endereco_Cliente.cs",
+              "RelativeDocumentMoniker": "Dados\\Endereco_Cliente.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\Dados\\Endereco_Cliente.cs*",
+              "RelativeToolTip": "Dados\\Endereco_Cliente.cs*",
+              "ViewState": "AQIAADEAAAAAAAAAAAApwEcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T01:56:08.646Z",
+              "WhenOpened": "2024-10-11T03:04:10.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmCliente.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
-              "RelativeDocumentMoniker": "View\\FrmCliente.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs [Design]*",
-              "RelativeToolTip": "View\\FrmCliente.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T01:37:00.151Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "FrmCliente.cs",
               "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
               "RelativeDocumentMoniker": "View\\FrmCliente.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs*",
-              "RelativeToolTip": "View\\FrmCliente.cs*",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAwwJMAAAAwAAAA",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
+              "RelativeToolTip": "View\\FrmCliente.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAowJYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T01:14:27.988Z",
+              "WhenOpened": "2024-10-11T02:58:25.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TesteIncioBonito.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\TesteIncioBonito.cs",
-              "RelativeDocumentMoniker": "View\\TesteIncioBonito.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\TesteIncioBonito.cs [Design]",
-              "RelativeToolTip": "View\\TesteIncioBonito.cs [Design]",
+              "Title": "FrmCliente.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
+              "RelativeDocumentMoniker": "View\\FrmCliente.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs [Design]",
+              "RelativeToolTip": "View\\FrmCliente.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T00:58:42.574Z",
+              "WhenOpened": "2024-10-11T02:58:21.82Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmCadPlanta.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs",
-              "RelativeDocumentMoniker": "View\\FrmCadPlanta.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs [Design]",
-              "RelativeToolTip": "View\\FrmCadPlanta.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\Negocio\\ClienteService.cs",
+              "RelativeDocumentMoniker": "Negocio\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\Negocio\\ClienteService.cs",
+              "RelativeToolTip": "Negocio\\ClienteService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowDMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T02:02:28.428Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-11T02:45:10.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Endereco_ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\Negocio\\Endereco_ClienteService.cs",
+              "RelativeDocumentMoniker": "Negocio\\Endereco_ClienteService.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\Negocio\\Endereco_ClienteService.cs",
+              "RelativeToolTip": "Negocio\\Endereco_ClienteService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAmwCkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T02:45:09.014Z",
+              "EditorCaption": ""
             }
           ]
         }

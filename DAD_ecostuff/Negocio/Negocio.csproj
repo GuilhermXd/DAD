@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteService.cs" />
+    <Compile Include="Endereco_ClienteService.cs" />
     <Compile Include="PlantaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -96,6 +96,8 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="ClienteRepository.cs" />
     <Compile Include="Conexao.cs" />
+    <Compile Include="Endereco_Cliente.cs" />
+    <Compile Include="Endereco_ClienteRepository.cs" />
     <Compile Include="Planta.cs" />
     <Compile Include="PlantaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

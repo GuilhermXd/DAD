@@ -17,102 +17,107 @@ namespace View
     public partial class FrmCliente : Form
     {
         private readonly  ClienteService _clienteService;
+        private readonly Endereco_ClienteService _enderecoService;
         DataTable dtCliente = new DataTable();
         private DataGridView dataGridView;
 
 
-        private void ExibirDataGridVertical(List<Cliente> clientes)
-        {
-            // Limpar colunas e linhas anteriores
-            dataGridView.Columns.Clear();
-            dataGridView.Rows.Clear();
+         private void ExibirDataGridVertical(List<Endereco_Cliente> endCliente)
+         {
+             // Limpar colunas e linhas anteriores
+             dataGridView.Columns.Clear();
+             dataGridView.Rows.Clear();
 
-            // Verificar se a lista de clientes não está vazia
-            if (clientes == null || clientes.Count == 0)
-            {
-                MessageBox.Show("Não há clientes para exibir.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
+             // Verificar se a lista de clientes não está vazia
+             if (endCliente == null || endCliente.Count == 0)
+             {
+                 MessageBox.Show("Não há Endereços para exibir.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                 return;
+             }
 
             // Criar uma coluna para cada cliente
-            foreach (var cliente in clientes)
+            foreach (var endereco in endCliente)
             {
-                // Usar o Nome do cliente como o título da coluna
-                dataGridView.Columns.Add(cliente.Nome, cliente.Nome);
+                // Usar o CEP do cliente como o título da coluna
+                dataGridView.Columns.Add(endereco.CEP.ToString(), endereco.CEP.ToString());
             }
 
             // Adicionar as linhas representando os atributos
-            dataGridView.Rows.Add("Código");
-            dataGridView.Rows.Add("Nome");
-            dataGridView.Rows.Add("Email");
-            dataGridView.Rows.Add("CPF/CNPJ");
-            dataGridView.Rows.Add("RG");
-            dataGridView.Rows.Add("Celular");
-            dataGridView.Rows.Add("Senha");
 
-            // Preencher as linhas com os valores de cada cliente
-            for (int i = 0; i < clientes.Count; i++)
-            {
-                dataGridView.Rows[0].Cells[i].Value = clientes[i].Codigo;
-                dataGridView.Rows[1].Cells[i].Value = clientes[i].Nome;
-                dataGridView.Rows[2].Cells[i].Value = clientes[i].Email;
-                dataGridView.Rows[3].Cells[i].Value = clientes[i].Cpf_Cnpj;
-                dataGridView.Rows[4].Cells[i].Value = clientes[i].Rg;
-                dataGridView.Rows[5].Cells[i].Value = clientes[i].Celular;
-                dataGridView.Rows[6].Cells[i].Value = "******"; // Mascarando a senha
+            dataGridView.Rows.Add("CEP");
+             dataGridView.Rows.Add("Rua");
+             dataGridView.Rows.Add("Numero");
+             dataGridView.Rows.Add("Bairro");
+             dataGridView.Rows.Add("Cidade");
+             dataGridView.Rows.Add("Pais");
+             dataGridView.Rows.Add("Codigo");
+             dataGridView.Rows.Add("ClienteCodigo");
+
+             // Preencher as linhas com os valores de cada cliente
+             for (int i = 0; i < endCliente.Count; i++)
+             {
+                 dataGridView.Rows[0].Cells[i].Value = endCliente[i].Codigo;
+                 dataGridView.Rows[1].Cells[i].Value = endCliente[i].ClienteCodigo;
+                 dataGridView.Rows[2].Cells[i].Value = endCliente[i].Rua;
+                 dataGridView.Rows[3].Cells[i].Value = endCliente[i].Numero;
+                 dataGridView.Rows[4].Cells[i].Value = endCliente[i].Bairro;
+                 dataGridView.Rows[5].Cells[i].Value = endCliente[i].Cidade;
+                 dataGridView.Rows[6].Cells[i].Value = endCliente[i].Pais; 
             }
 
-            // Ajustar o layout para melhor visualização
-            dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridView.RowHeadersVisible = false; // Opcional: Esconder cabeçalhos de linhas
-        }
+             // Ajustar o layout para melhor visualização
+             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+             dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+             dataGridView.RowHeadersVisible = false; // Opcional: Esconder cabeçalhos de linhas
+         }
 
-        /// <summary>
-        /// Método que recupera a lista de clientes do banco de dados.
-        /// </summary>
-        /// <returns>Lista de objetos Cliente.</returns>
-        private List<Cliente> ObterClientesDoBanco()
-        {
-            List<Cliente> clientes = new List<Cliente>();
-            string connectionString = ConfigurationManager.ConnectionStrings["MinhaConexaoDB"].ConnectionString;
+         /// <summary>
+         /// Método que recupera a lista de clientes do banco de dados.
+         /// </summary>
+         /// <returns>Lista de objetos Cliente.</returns>
+         private List<Endereco_Cliente> ObterClientesDoBanco()
+         {
+             List<Endereco_Cliente> endCliente = new List<Endereco_Cliente>();
+             string connectionString = ConfigurationManager.ConnectionStrings["MinhaConexaoDB"].ConnectionString;
 
-            string query = "SELECT CODIGO, NOME, EMAIL, CPF_CNPJ, RG, CELULAR, SENHA FROM CLIENTE";
+             string query = "SELECT CODIGO, CLIENTE_CODIGO, CEP, RUA, NUMERO, BAIRRO, CIDADE, PAIS";
 
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        conn.Open();
-                        using (SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                Cliente cliente = new Cliente
+             try
+             {
+                 using (SqlConnection conn = new SqlConnection(connectionString))
+                 {
+                     using (SqlCommand cmd = new SqlCommand(query, conn))
+                     {
+                         conn.Open();
+                         using (SqlDataReader reader = cmd.ExecuteReader())
+                         {
+                             while (reader.Read())
+                             {
+                                Endereco_Cliente endcliente = new Endereco_Cliente
                                 {
                                     Codigo = reader.GetInt32(reader.GetOrdinal("Codigo")),
-                                    Nome = reader.IsDBNull(reader.GetOrdinal("Nome")) ? "Sem Nome" : reader.GetString(reader.GetOrdinal("Nome")),
-                                    Email = reader.IsDBNull(reader.GetOrdinal("Email")) ? "Sem Email" : reader.GetString(reader.GetOrdinal("Email")),
-                                    Cpf_Cnpj = reader.IsDBNull(reader.GetOrdinal("Cpf_Cnpj")) ? "Sem CPF/CNPJ" : reader.GetString(reader.GetOrdinal("Cpf_Cnpj")),
-                                    Rg = reader.IsDBNull(reader.GetOrdinal("Rg")) ? "Sem RG" : reader.GetString(reader.GetOrdinal("Rg")),
-                                    Celular = reader.IsDBNull(reader.GetOrdinal("Celular")) ? "Sem Celular" : reader.GetString(reader.GetOrdinal("Celular")),
-                                    Senha = reader.IsDBNull(reader.GetOrdinal("Senha")) ? "******" : "******" // Mascarando a senha
-                                };
-                                clientes.Add(cliente);
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Erro ao obter clientes: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                                    ClienteCodigo = reader.GetInt32(reader.GetOrdinal("ClienteCodigo")), // Adicione esta linha para ClienteCodigo
+                                    CEP = reader.IsDBNull(reader.GetOrdinal("CEP")) ? 0 : reader.GetInt32(reader.GetOrdinal("CEP")), // Usando int aqui
+                                    Rua = reader.IsDBNull(reader.GetOrdinal("Rua")) ? "Sem Rua" : reader.GetString(reader.GetOrdinal("Rua")),
+                                    Numero = reader.IsDBNull(reader.GetOrdinal("Numero")) ? "Sem Número" : reader.GetString(reader.GetOrdinal("Numero")),
+                                    Bairro = reader.IsDBNull(reader.GetOrdinal("Bairro")) ? "Sem Bairro" : reader.GetString(reader.GetOrdinal("Bairro")),
+                                    Cidade = reader.IsDBNull(reader.GetOrdinal("Cidade")) ? "Sem Cidade" : reader.GetString(reader.GetOrdinal("Cidade")),
+                                    Pais = reader.IsDBNull(reader.GetOrdinal("Pais")) ? "Sem País" : reader.GetString(reader.GetOrdinal("Pais"))
 
-            return clientes;
-        }
+                                };
+                                endCliente.Add(endcliente);
+                             }
+                         }
+                     }
+                 }
+             }
+             catch (Exception ex)
+             {
+                 MessageBox.Show($"Erro ao obter Endereços: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+             }
+
+             return endCliente;
+         }
 
 
 
@@ -133,20 +138,20 @@ namespace View
             this.dataGridView.AllowUserToDeleteRows = false; // Impede a exclusão de linhas pelo usuário
             this.dataGridView.ReadOnly = true;
 
-
+            _enderecoService = new Endereco_ClienteService();
             _clienteService = new ClienteService();
         }
 
         private void carregaGridView()
         {
 
-            //
-            DataGridView dgClienteee = new DataGridView();
-            DataTable dtClientee = _clienteService.getAll();
-            dgClienteee.DataSource = dtClientee;
-            dgClienteee.Dock = DockStyle.Fill;
-            pEndereco.Controls.Add(dgClienteee);
-            //
+            
+            DataGridView dgEndCliente = new DataGridView();
+            DataTable dtEndCliente = _enderecoService.getAll();
+            dgEndCliente.DataSource = dtEndCliente;
+            dgEndCliente.Dock = DockStyle.Fill;
+            pEndereco.Controls.Add(dgEndCliente);
+            
             dtCliente = _clienteService.getAll();
             dgCliente.DataSource = dtCliente;
             //dgPlanta.DataSource = _plantaService.getAll();
