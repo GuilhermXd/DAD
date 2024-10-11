@@ -63,7 +63,7 @@ namespace Negocio
             return _repository.getAll();
         }
 
-        public DataTable filterByName(int clienteCodigo)
+        public DataTable filterByClienteCodigo(int clienteCodigo)
         {
             return _repository.filterByClientCodigo(clienteCodigo);
         }

@@ -43,10 +43,6 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtAdiciona = new System.Windows.Forms.Button();
             this.dgCliente = new System.Windows.Forms.DataGridView();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.pEndereco = new System.Windows.Forms.Panel();
-            this.btnPesquisa = new System.Windows.Forms.Button();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,9 +51,27 @@
             this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.pEndereco = new System.Windows.Forms.Panel();
+            this.dgEndereco = new System.Windows.Forms.DataGridView();
+            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnPesquisa = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bairroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codigoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteCodigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEndereco = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            this.pEndereco.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,55 +221,6 @@
             this.dgCliente.TabIndex = 13;
             this.dgCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCliente_CellClick);
             // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(440, 167);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(191, 48);
-            this.btnExcluir.TabIndex = 14;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(243, 167);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(191, 48);
-            this.btnCancelar.TabIndex = 17;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // pEndereco
-            // 
-            this.pEndereco.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pEndereco.Location = new System.Drawing.Point(922, 27);
-            this.pEndereco.Name = "pEndereco";
-            this.pEndereco.Size = new System.Drawing.Size(402, 579);
-            this.pEndereco.TabIndex = 18;
-            // 
-            // btnPesquisa
-            // 
-            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_501;
-            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisa.Location = new System.Drawing.Point(637, 167);
-            this.btnPesquisa.Name = "btnPesquisa";
-            this.btnPesquisa.Size = new System.Drawing.Size(191, 59);
-            this.btnPesquisa.TabIndex = 15;
-            this.btnPesquisa.Text = "  Pesquisar";
-            this.btnPesquisa.UseVisualStyleBackColor = false;
-            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
-            // 
             // codigoDataGridViewTextBoxColumn
             // 
             this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
@@ -312,6 +277,83 @@
             // 
             this.clienteBindingSource.DataSource = typeof(Dados.Cliente);
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(440, 167);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(191, 48);
+            this.btnExcluir.TabIndex = 14;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(243, 167);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(191, 48);
+            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // pEndereco
+            // 
+            this.pEndereco.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pEndereco.Controls.Add(this.dgEndereco);
+            this.pEndereco.Location = new System.Drawing.Point(922, 27);
+            this.pEndereco.Name = "pEndereco";
+            this.pEndereco.Size = new System.Drawing.Size(402, 579);
+            this.pEndereco.TabIndex = 18;
+            // 
+            // dgEndereco
+            // 
+            this.dgEndereco.AllowUserToAddRows = false;
+            this.dgEndereco.AllowUserToDeleteRows = false;
+            this.dgEndereco.AutoGenerateColumns = false;
+            this.dgEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cEPDataGridViewTextBoxColumn,
+            this.ruaDataGridViewTextBoxColumn,
+            this.numeroDataGridViewTextBoxColumn,
+            this.bairroDataGridViewTextBoxColumn,
+            this.cidadeDataGridViewTextBoxColumn,
+            this.paisDataGridViewTextBoxColumn,
+            this.codigoDataGridViewTextBoxColumn1,
+            this.clienteCodigoDataGridViewTextBoxColumn});
+            this.dgEndereco.DataSource = this.enderecoClienteBindingSource;
+            this.dgEndereco.Location = new System.Drawing.Point(40, 121);
+            this.dgEndereco.Name = "dgEndereco";
+            this.dgEndereco.ReadOnly = true;
+            this.dgEndereco.Size = new System.Drawing.Size(307, 170);
+            this.dgEndereco.TabIndex = 0;
+            this.dgEndereco.Visible = false;
+            // 
+            // enderecoClienteBindingSource
+            // 
+            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
+            // 
+            // btnPesquisa
+            // 
+            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_501;
+            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisa.Location = new System.Drawing.Point(637, 167);
+            this.btnPesquisa.Name = "btnPesquisa";
+            this.btnPesquisa.Size = new System.Drawing.Size(191, 59);
+            this.btnPesquisa.TabIndex = 15;
+            this.btnPesquisa.Text = "  Pesquisar";
+            this.btnPesquisa.UseVisualStyleBackColor = false;
+            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -323,11 +365,81 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // cEPDataGridViewTextBoxColumn
+            // 
+            this.cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
+            this.cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
+            this.cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
+            this.cEPDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ruaDataGridViewTextBoxColumn
+            // 
+            this.ruaDataGridViewTextBoxColumn.DataPropertyName = "Rua";
+            this.ruaDataGridViewTextBoxColumn.HeaderText = "Rua";
+            this.ruaDataGridViewTextBoxColumn.Name = "ruaDataGridViewTextBoxColumn";
+            this.ruaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // numeroDataGridViewTextBoxColumn
+            // 
+            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
+            this.numeroDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bairroDataGridViewTextBoxColumn
+            // 
+            this.bairroDataGridViewTextBoxColumn.DataPropertyName = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.Name = "bairroDataGridViewTextBoxColumn";
+            this.bairroDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cidadeDataGridViewTextBoxColumn
+            // 
+            this.cidadeDataGridViewTextBoxColumn.DataPropertyName = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.Name = "cidadeDataGridViewTextBoxColumn";
+            this.cidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // paisDataGridViewTextBoxColumn
+            // 
+            this.paisDataGridViewTextBoxColumn.DataPropertyName = "Pais";
+            this.paisDataGridViewTextBoxColumn.HeaderText = "Pais";
+            this.paisDataGridViewTextBoxColumn.Name = "paisDataGridViewTextBoxColumn";
+            this.paisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // codigoDataGridViewTextBoxColumn1
+            // 
+            this.codigoDataGridViewTextBoxColumn1.DataPropertyName = "Codigo";
+            this.codigoDataGridViewTextBoxColumn1.HeaderText = "Codigo";
+            this.codigoDataGridViewTextBoxColumn1.Name = "codigoDataGridViewTextBoxColumn1";
+            this.codigoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // clienteCodigoDataGridViewTextBoxColumn
+            // 
+            this.clienteCodigoDataGridViewTextBoxColumn.DataPropertyName = "Cliente_Codigo";
+            this.clienteCodigoDataGridViewTextBoxColumn.HeaderText = "ClienteCodigo";
+            this.clienteCodigoDataGridViewTextBoxColumn.Name = "clienteCodigoDataGridViewTextBoxColumn";
+            this.clienteCodigoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // btnEndereco
+            // 
+            this.btnEndereco.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEndereco.Location = new System.Drawing.Point(46, 628);
+            this.btnEndereco.Name = "btnEndereco";
+            this.btnEndereco.Size = new System.Drawing.Size(191, 48);
+            this.btnEndereco.TabIndex = 19;
+            this.btnEndereco.Text = "Exibir Endereço";
+            this.btnEndereco.UseVisualStyleBackColor = false;
+            this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);
+            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1619, 933);
+            this.Controls.Add(this.btnEndereco);
             this.Controls.Add(this.pEndereco);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnPesquisa);
@@ -352,6 +464,9 @@
             this.Load += new System.EventHandler(this.FrmCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            this.pEndereco.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -387,5 +502,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn rgDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn celularDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn senhaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dgEndereco;
+        private System.Windows.Forms.BindingSource enderecoClienteBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ruaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bairroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paisDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clienteCodigoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnEndereco;
     }
 }

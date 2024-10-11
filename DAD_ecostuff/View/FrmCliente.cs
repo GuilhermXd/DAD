@@ -18,10 +18,10 @@ namespace View
     {
         private readonly  ClienteService _clienteService;
         private readonly Endereco_ClienteService _enderecoService;
+        DataTable dtCliente_Endereco = new DataTable();
         DataTable dtCliente = new DataTable();
-        private DataGridView dataGridView;
 
-
+        /*
          private void ExibirDataGridVertical(List<Endereco_Cliente> endCliente)
          {
              // Limpar colunas e linhas anteriores
@@ -117,14 +117,16 @@ namespace View
              }
 
              return endCliente;
-         }
+         }*/
 
 
 
         public FrmCliente()
         {
             InitializeComponent();
-            this.dataGridView = new DataGridView();
+            _clienteService = new ClienteService();
+
+            /*this.dataGridView = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
 
@@ -136,21 +138,23 @@ namespace View
             this.dataGridView.TabIndex = 0;
             this.dataGridView.AllowUserToAddRows = false; // Impede a adição de novas linhas pelo usuário
             this.dataGridView.AllowUserToDeleteRows = false; // Impede a exclusão de linhas pelo usuário
-            this.dataGridView.ReadOnly = true;
+            this.dataGridView.ReadOnly = true;*/
 
             _enderecoService = new Endereco_ClienteService();
-            _clienteService = new ClienteService();
         }
 
+       
         private void carregaGridView()
         {
 
-            
-            DataGridView dgEndCliente = new DataGridView();
+            dtCliente_Endereco = _enderecoService.getAll();
+            dgEndereco.DataSource = dtCliente_Endereco;
+            dgEndereco.Refresh();
+            /*DataGridView dgEndCliente = new DataGridView();
             DataTable dtEndCliente = _enderecoService.getAll();
             dgEndCliente.DataSource = dtEndCliente;
             dgEndCliente.Dock = DockStyle.Fill;
-            pEndereco.Controls.Add(dgEndCliente);
+            pEndereco.Controls.Add(dgEndCliente);*/
             
             dtCliente = _clienteService.getAll();
             dgCliente.DataSource = dtCliente;
@@ -259,8 +263,25 @@ namespace View
             string msg;
             msg = "A operação foi Cancelada!";
             MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            pEndereco.Controls.Clear();
             atualiza();
             LimparText();
+        }
+        private void HabilitaGridEndereco()
+        {
+            dgEndereco.Visible = true;
+            dgEndereco.Dock = DockStyle.Fill;
+        }
+
+        private void btnEndereco_Click(object sender, EventArgs e)
+        {
+            DataTable dtEndereco = _enderecoService.filterByClienteCodigo(codigo);
+            if (dtEndereco != null) 
+            {
+                dgEndereco.DataSource = dtEndereco;
+                dgEndereco.Refresh();
+            }
+            HabilitaGridEndereco();
         }
     } 
 

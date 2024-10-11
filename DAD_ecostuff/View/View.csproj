@@ -166,6 +166,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Dados.Cliente.datasource" />
+    <None Include="Properties\DataSources\Dados.Endereco_Cliente.datasource" />
     <None Include="Properties\DataSources\Dados.Planta.datasource" />
     <None Include="Properties\DataSources\Dados.PlantaRepository.datasource" />
     <None Include="Properties\Settings.settings">
