@@ -50,6 +50,8 @@ namespace View
                 MessageBox.Show("Adicionado com Sucesso!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+            atualiza();
+
         }
 
         private void FrmCliente_Load(object sender, EventArgs e)
@@ -97,6 +99,21 @@ namespace View
             string id = dgCliente.Rows[e.RowIndex].Cells[0].Value.ToString();
             codigo = int.Parse(id);
             dgCliente.Refresh();
+        }
+
+        private void btnPesquisa_Click(object sender, EventArgs e)
+        {
+            FrmPesquisa f = new FrmPesquisa();
+            string txtBusca = "";
+            
+            f.ShowDialog();
+            txtBusca = f.Texto;
+            DataTable tbClientes = _clienteService.filterByName(txtBusca);
+            if (tbClientes != null)
+            {
+                dgCliente.DataSource = tbClientes;
+                dgCliente.Refresh();
+            }
         }
     } 
 

@@ -8,7 +8,7 @@ namespace View
         public FrmInicio()
         {
             InitializeComponent();
-            FrmCadastro frmCadastro = new FrmCadastro();
+            FrmCadPlanta frmCadastro = new FrmCadPlanta();
             frmCadastro.MdiParent = this;
             frmCadastro.Size = frmCadastro.MdiParent.Size;
             frmCadastro.Show();
@@ -23,7 +23,7 @@ namespace View
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCadastro frmCadastro = new FrmCadastro();
+            FrmCadPlanta frmCadastro = new FrmCadPlanta();
             frmCadastro.MdiParent = this;
             frmCadastro.Size = frmCadastro.MdiParent.Size;
             frmCadastro.Show();
@@ -36,10 +36,7 @@ namespace View
 
         private void ediçãoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            FrmConsultaPlanta frmConsulta = new FrmConsultaPlanta();
-            frmConsulta.MdiParent = this;
-            
-            frmConsulta.Show();
+           
         }
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)

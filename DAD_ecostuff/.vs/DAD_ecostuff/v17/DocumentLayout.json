@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmconsultaplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmconsultaplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\testeinciobonito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\testeinciobonito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\testeinciobonito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\testeinciobonito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmpesquisa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmconsultaplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmconsultaplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\view\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\massa\\documents\\dad\\dad_ecostuff\\view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,22 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmConsultaPlanta.cs",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmConsultaPlanta.cs",
-              "RelativeDocumentMoniker": "View\\FrmConsultaPlanta.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmConsultaPlanta.cs",
-              "RelativeToolTip": "View\\FrmConsultaPlanta.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAcwFwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T01:40:17.491Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -56,52 +42,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmConsultaPlanta.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmConsultaPlanta.cs",
-              "RelativeDocumentMoniker": "View\\FrmConsultaPlanta.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmConsultaPlanta.cs [Design]",
-              "RelativeToolTip": "View\\FrmConsultaPlanta.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "FrmPesquisa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmPesquisa.cs",
+              "RelativeDocumentMoniker": "View\\FrmPesquisa.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmPesquisa.cs [Design]",
+              "RelativeToolTip": "View\\FrmPesquisa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T02:03:00.016Z",
+              "WhenOpened": "2024-10-11T01:17:23.91Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmCliente.cs",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
+              "RelativeDocumentMoniker": "View\\FrmCliente.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
+              "RelativeToolTip": "View\\FrmCliente.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAmwHMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T01:14:27.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TesteIncioBonito.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\TesteIncioBonito.cs",
+              "RelativeDocumentMoniker": "View\\TesteIncioBonito.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\TesteIncioBonito.cs [Design]",
+              "RelativeToolTip": "View\\TesteIncioBonito.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:58:42.574Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmCadastro.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCadastro.cs",
-              "RelativeDocumentMoniker": "View\\FrmCadastro.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCadastro.cs [Design]*",
-              "RelativeToolTip": "View\\FrmCadastro.cs [Design]*",
+              "Title": "FrmCadPlanta.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs",
+              "RelativeDocumentMoniker": "View\\FrmCadPlanta.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs [Design]*",
+              "RelativeToolTip": "View\\FrmCadPlanta.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T02:02:28.428Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TesteIncioBonito.cs",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\TesteIncioBonito.cs",
-              "RelativeDocumentMoniker": "View\\TesteIncioBonito.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\TesteIncioBonito.cs",
-              "RelativeToolTip": "View\\TesteIncioBonito.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwCYAAAAlAAAA",
+              "DocumentIndex": 3,
+              "Title": "FrmCadPlanta.cs",
+              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs",
+              "RelativeDocumentMoniker": "View\\FrmCadPlanta.cs",
+              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs*",
+              "RelativeToolTip": "View\\FrmCadPlanta.cs*",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAgwKEAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T02:01:14.138Z",
+              "WhenOpened": "2024-10-11T00:34:25.692Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmInicio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmInicio.cs",
-              "RelativeDocumentMoniker": "View\\FrmInicio.cs",
-              "ToolTip": "C:\\Users\\massa\\Documents\\DAD\\DAD_ecostuff\\View\\FrmInicio.cs [Design]",
-              "RelativeToolTip": "View\\FrmInicio.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T21:57:22.719Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -42,8 +42,14 @@ namespace View
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            FrmCadastro frmcadastro = new FrmCadastro();
+            FrmCadPlanta frmcadastro = new FrmCadPlanta();
             OpenFormInPanel(frmcadastro,pForm);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmCliente frmCadCliente = new FrmCliente();
+            OpenFormInPanel(frmCadCliente,pForm);
         }
     }
 }

@@ -110,23 +110,23 @@
     <Compile Include="FrmCliente.Designer.cs">
       <DependentUpon>FrmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultaPlanta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmConsultaPlanta.Designer.cs">
-      <DependentUpon>FrmConsultaPlanta.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadastro.cs">
+    <Compile Include="FrmCadPlanta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadastro.Designer.cs">
-      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    <Compile Include="FrmCadPlanta.Designer.cs">
+      <DependentUpon>FrmCadPlanta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesquisa.Designer.cs">
+      <DependentUpon>FrmPesquisa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,14 +142,14 @@
     <EmbeddedResource Include="FrmCliente.resx">
       <DependentUpon>FrmCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmConsultaPlanta.resx">
-      <DependentUpon>FrmConsultaPlanta.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadastro.resx">
-      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCadPlanta.resx">
+      <DependentUpon>FrmCadPlanta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesquisa.resx">
+      <DependentUpon>FrmPesquisa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -214,6 +214,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Design sem nome1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planta21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-casa-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-casa-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-desligar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-desligar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pesquisar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-x-25.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

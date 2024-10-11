@@ -261,13 +261,13 @@ C:\Users\massa\Documents\DAD\DAD_ecostuff\View\bin\Debug\System.Threading.Tasks.
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.AboutBox1.resources
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.FrmInicio.resources
-C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadastro.resources
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.Properties.Resources.resources
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.GenerateResource.cache
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.Up2Date
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.exe
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.pdb
-C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.FrmConsultaPlanta.resources
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCliente.resources
 C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.TesteIncioBonito.resources
+C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadPlanta.resources
+C:\Users\massa\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.FrmPesquisa.resources
