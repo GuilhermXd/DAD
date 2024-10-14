@@ -55,9 +55,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pEndereco = new System.Windows.Forms.Panel();
             this.dgEndereco = new System.Windows.Forms.DataGridView();
-            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnPesquisa = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +62,9 @@
             this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clienteCodigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEndereco = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
@@ -78,22 +77,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(43, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.Size = new System.Drawing.Size(48, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(213, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(45, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Email:";
             // 
@@ -104,7 +103,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(385, 59);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "CPF/CNPJ:";
             // 
@@ -115,29 +114,29 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(432, 110);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 16);
+            this.label4.Size = new System.Drawing.Size(29, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Rg:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(43, 111);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.Size = new System.Drawing.Size(53, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Celular:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(213, 110);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 16);
+            this.label6.Size = new System.Drawing.Size(50, 16);
             this.label6.TabIndex = 5;
             this.label6.Text = "Senha:";
             // 
@@ -325,8 +324,7 @@
             this.bairroDataGridViewTextBoxColumn,
             this.cidadeDataGridViewTextBoxColumn,
             this.paisDataGridViewTextBoxColumn,
-            this.codigoDataGridViewTextBoxColumn1,
-            this.clienteCodigoDataGridViewTextBoxColumn});
+            this.codigoDataGridViewTextBoxColumn1});
             this.dgEndereco.DataSource = this.enderecoClienteBindingSource;
             this.dgEndereco.Location = new System.Drawing.Point(40, 121);
             this.dgEndereco.Name = "dgEndereco";
@@ -334,36 +332,6 @@
             this.dgEndereco.Size = new System.Drawing.Size(307, 170);
             this.dgEndereco.TabIndex = 0;
             this.dgEndereco.Visible = false;
-            // 
-            // enderecoClienteBindingSource
-            // 
-            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
-            // 
-            // btnPesquisa
-            // 
-            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_501;
-            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisa.Location = new System.Drawing.Point(637, 167);
-            this.btnPesquisa.Name = "btnPesquisa";
-            this.btnPesquisa.Size = new System.Drawing.Size(191, 59);
-            this.btnPesquisa.TabIndex = 15;
-            this.btnPesquisa.Text = "  Pesquisar";
-            this.btnPesquisa.UseVisualStyleBackColor = false;
-            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::View.Properties.Resources.Apresentação_de_Negócios_Plano_de_Negócios_Geométrico_Corporativo_Verde_Preto_e_Branco;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1619, 933);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
             // 
             // cEPDataGridViewTextBoxColumn
             // 
@@ -414,12 +382,35 @@
             this.codigoDataGridViewTextBoxColumn1.Name = "codigoDataGridViewTextBoxColumn1";
             this.codigoDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // clienteCodigoDataGridViewTextBoxColumn
+            // enderecoClienteBindingSource
             // 
-            this.clienteCodigoDataGridViewTextBoxColumn.DataPropertyName = "Cliente_Codigo";
-            this.clienteCodigoDataGridViewTextBoxColumn.HeaderText = "ClienteCodigo";
-            this.clienteCodigoDataGridViewTextBoxColumn.Name = "clienteCodigoDataGridViewTextBoxColumn";
-            this.clienteCodigoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
+            // 
+            // btnPesquisa
+            // 
+            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_501;
+            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisa.Location = new System.Drawing.Point(637, 167);
+            this.btnPesquisa.Name = "btnPesquisa";
+            this.btnPesquisa.Size = new System.Drawing.Size(191, 59);
+            this.btnPesquisa.TabIndex = 15;
+            this.btnPesquisa.Text = "  Pesquisar";
+            this.btnPesquisa.UseVisualStyleBackColor = false;
+            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::View.Properties.Resources.Apresentação_de_Negócios_Plano_de_Negócios_Geométrico_Corporativo_Verde_Preto_e_Branco;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1619, 933);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // btnEndereco
             // 

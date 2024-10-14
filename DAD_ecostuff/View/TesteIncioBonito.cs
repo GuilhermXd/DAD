@@ -42,19 +42,33 @@ namespace View
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            FrmCadPlanta frmcadastro = new FrmCadPlanta();
-            OpenFormInPanel(frmcadastro,pForm);
+            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FrmCliente frmCadCliente = new FrmCliente();
+        /*
+          FrmCliente frmCadCliente = new FrmCliente();
             OpenFormInPanel(frmCadCliente,pForm);
-        }
+
+
+         FrmCadPlanta frmcadastro = new FrmCadPlanta();
+            OpenFormInPanel(frmcadastro, pForm);
+         */
 
         private void pForm_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnFrmPlanta_Click(object sender, EventArgs e)
+        {
+            FrmCadPlanta frmcadastro = new FrmCadPlanta();
+            OpenFormInPanel(frmcadastro, pForm);
+        }
+
+        private void btnFrmCliente_Click(object sender, EventArgs e)
+        {
+            FrmCliente frmCadCliente = new FrmCliente();
+            OpenFormInPanel(frmCadCliente, pForm);
         }
     }
 }

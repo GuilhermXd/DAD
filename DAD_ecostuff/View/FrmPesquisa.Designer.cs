@@ -40,7 +40,7 @@
             this.btnEnvia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnvia.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnvia.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEnvia.Location = new System.Drawing.Point(627, 104);
+            this.btnEnvia.Location = new System.Drawing.Point(611, 104);
             this.btnEnvia.Name = "btnEnvia";
             this.btnEnvia.Size = new System.Drawing.Size(133, 39);
             this.btnEnvia.TabIndex = 0;
@@ -75,7 +75,7 @@
             this.btnOff.FlatAppearance.BorderSize = 0;
             this.btnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOff.Image = global::View.Properties.Resources.icons8_desligar_32;
-            this.btnOff.Location = new System.Drawing.Point(743, 5);
+            this.btnOff.Location = new System.Drawing.Point(695, 5);
             this.btnOff.Name = "btnOff";
             this.btnOff.Size = new System.Drawing.Size(49, 40);
             this.btnOff.TabIndex = 3;
@@ -87,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
-            this.ClientSize = new System.Drawing.Size(804, 155);
+            this.ClientSize = new System.Drawing.Size(774, 155);
             this.ControlBox = false;
             this.Controls.Add(this.btnOff);
             this.Controls.Add(this.label1);

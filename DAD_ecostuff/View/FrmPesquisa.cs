@@ -28,7 +28,7 @@ namespace View
 
         private void btnOff_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Close();
         }
 
         private void btnEnvia_Click(object sender, EventArgs e)
