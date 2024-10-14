@@ -77,7 +77,6 @@
             this.btnFrmCliente.TabIndex = 3;
             this.btnFrmCliente.Text = "CLIENTES";
             this.btnFrmCliente.UseVisualStyleBackColor = true;
-            this.btnFrmCliente.Click += new System.EventHandler(this.btnFrmCliente_Click);
             // 
             // btnFrmPlanta
             // 
