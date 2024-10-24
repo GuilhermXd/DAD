@@ -275,6 +275,7 @@ namespace View
 
         private void btnEndereco_Click(object sender, EventArgs e)
         {
+            int codigo = int.Parse(txtCodEnd.Text);
             DataTable dtEndereco = _enderecoService.filterByClienteCodigo(codigo);
             if (dtEndereco != null) 
             {

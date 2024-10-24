@@ -15,6 +15,7 @@ namespace View
         public TesteIncioBonito()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnOff_Click(object sender, EventArgs e)
