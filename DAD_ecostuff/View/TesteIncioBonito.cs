@@ -65,7 +65,8 @@ namespace View
             OpenFormInPanel(frmcadastro, pForm);
         }
 
-        private void btnFrmCliente_Click(object sender, EventArgs e)
+      
+        private void btnFrmCliente_Click_1(object sender, EventArgs e)
         {
             FrmCliente frmCadCliente = new FrmCliente();
             OpenFormInPanel(frmCadCliente, pForm);

@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TesteIncioBonito));
             this.pMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pConfig = new System.Windows.Forms.Panel();
+            this.pForm = new System.Windows.Forms.Panel();
+            this.btnOff = new System.Windows.Forms.Button();
             this.btnFrmCliente = new System.Windows.Forms.Button();
             this.btnFrmPlanta = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pConfig = new System.Windows.Forms.Panel();
-            this.btnOff = new System.Windows.Forms.Button();
-            this.pForm = new System.Windows.Forms.Panel();
             this.pMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pMenu
             // 
-            this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
+            this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(94)))), ((int)(((byte)(76)))));
             this.pMenu.Controls.Add(this.panel1);
             this.pMenu.Controls.Add(this.btnFrmCliente);
             this.pMenu.Controls.Add(this.btnFrmPlanta);
@@ -65,6 +65,37 @@
             this.panel1.Size = new System.Drawing.Size(200, 77);
             this.panel1.TabIndex = 0;
             // 
+            // pConfig
+            // 
+            this.pConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(94)))), ((int)(((byte)(76)))));
+            this.pConfig.Controls.Add(this.btnOff);
+            this.pConfig.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pConfig.Location = new System.Drawing.Point(200, 0);
+            this.pConfig.Name = "pConfig";
+            this.pConfig.Size = new System.Drawing.Size(1350, 36);
+            this.pConfig.TabIndex = 1;
+            // 
+            // pForm
+            // 
+            this.pForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pForm.Location = new System.Drawing.Point(200, 36);
+            this.pForm.Name = "pForm";
+            this.pForm.Size = new System.Drawing.Size(1350, 725);
+            this.pForm.TabIndex = 3;
+            this.pForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pForm_Paint);
+            // 
+            // btnOff
+            // 
+            this.btnOff.FlatAppearance.BorderSize = 0;
+            this.btnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOff.Image = global::View.Properties.Resources.icons8_desligar_32;
+            this.btnOff.Location = new System.Drawing.Point(1301, 0);
+            this.btnOff.Name = "btnOff";
+            this.btnOff.Size = new System.Drawing.Size(49, 40);
+            this.btnOff.TabIndex = 2;
+            this.btnOff.UseVisualStyleBackColor = true;
+            this.btnOff.Click += new System.EventHandler(this.btnOff_Click);
+            // 
             // btnFrmCliente
             // 
             this.btnFrmCliente.FlatAppearance.BorderSize = 0;
@@ -77,6 +108,7 @@
             this.btnFrmCliente.TabIndex = 3;
             this.btnFrmCliente.Text = "CLIENTES";
             this.btnFrmCliente.UseVisualStyleBackColor = true;
+            this.btnFrmCliente.Click += new System.EventHandler(this.btnFrmCliente_Click_1);
             // 
             // btnFrmPlanta
             // 
@@ -108,45 +140,14 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(80)))), ((int)(((byte)(62)))));
-            this.pictureBox1.Image = global::View.Properties.Resources.planta2;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(94)))), ((int)(((byte)(76)))));
+            this.pictureBox1.Image = global::View.Properties.Resources.plantasemfnd;
             this.pictureBox1.Location = new System.Drawing.Point(36, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // pConfig
-            // 
-            this.pConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
-            this.pConfig.Controls.Add(this.btnOff);
-            this.pConfig.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pConfig.Location = new System.Drawing.Point(200, 0);
-            this.pConfig.Name = "pConfig";
-            this.pConfig.Size = new System.Drawing.Size(1350, 36);
-            this.pConfig.TabIndex = 1;
-            // 
-            // btnOff
-            // 
-            this.btnOff.FlatAppearance.BorderSize = 0;
-            this.btnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOff.Image = global::View.Properties.Resources.icons8_desligar_32;
-            this.btnOff.Location = new System.Drawing.Point(1301, 0);
-            this.btnOff.Name = "btnOff";
-            this.btnOff.Size = new System.Drawing.Size(49, 40);
-            this.btnOff.TabIndex = 2;
-            this.btnOff.UseVisualStyleBackColor = true;
-            this.btnOff.Click += new System.EventHandler(this.btnOff_Click);
-            // 
-            // pForm
-            // 
-            this.pForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pForm.Location = new System.Drawing.Point(200, 36);
-            this.pForm.Name = "pForm";
-            this.pForm.Size = new System.Drawing.Size(1350, 725);
-            this.pForm.TabIndex = 3;
-            this.pForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pForm_Paint);
             // 
             // TesteIncioBonito
             // 
@@ -161,8 +162,8 @@
             this.Name = "TesteIncioBonito";
             this.Text = "teste";
             this.pMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pConfig.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
