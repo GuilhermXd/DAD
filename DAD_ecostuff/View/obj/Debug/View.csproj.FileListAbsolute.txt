@@ -105,8 +105,6 @@ C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\bin\Debug\Dados.pdb
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\bin\Debug\Dados.dll.config
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.AboutBox1.resources
-C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FormInicio.resources
-C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadastro.resources
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.Properties.Resources.resources
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.GenerateResource.cache
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.CoreCompileInputs.cache
@@ -325,3 +323,8 @@ C:\Users\aluno\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.CoreCompileIn
 C:\Users\aluno\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\aluno\Desktop\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.exe
 C:\Users\aluno\Desktop\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.pdb
+C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCliente.resources
+C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmInicio.resources
+C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadPlanta.resources
+C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmPesquisa.resources
+C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.TesteIncioBonito.resources

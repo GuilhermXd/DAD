@@ -12,7 +12,7 @@ namespace Negocio
     {
         private  ClienteRepository _repository;
 
-        public   ClienteService()
+        public ClienteService()
         {
             _repository = new ClienteRepository();
         }
@@ -28,9 +28,10 @@ namespace Negocio
 
         public string Update(string nome, string email, string cpf_cnpj, string rg, string celular,string senha, int? codigo)
         {
-            // Insira as validações e regras de negócio aqui
-            // Por exemplo, verificar se o email já está cadastrado
-            
+            if(String.IsNullOrEmpty(nome) || String.IsNullOrEmpty(email))
+            {
+                throw new ArgumentException("Campos obrigatórios não preenchidos");
+            }
             var cliente = new Cliente
             {
                 Codigo = codigo,
@@ -56,7 +57,6 @@ namespace Negocio
 
         public string Remove(int codigo)
         {
-
             return _repository.Remove(codigo);
         }
         public DataTable getAll()

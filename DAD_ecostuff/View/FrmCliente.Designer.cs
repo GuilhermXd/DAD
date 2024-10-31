@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,14 +43,6 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtAdiciona = new System.Windows.Forms.Button();
             this.dgCliente = new System.Windows.Forms.DataGridView();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.pEndereco = new System.Windows.Forms.Panel();
-            this.dgEndereco = new System.Windows.Forms.DataGridView();
-            this.btnEndereco = new System.Windows.Forms.Button();
-            this.tabCliente = new System.Windows.Forms.TabControl();
-            this.tabAdiciona = new System.Windows.Forms.TabPage();
-            this.tabConsulta = new System.Windows.Forms.TabPage();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,8 +51,10 @@
             this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnPesquisa = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.pEndereco = new System.Windows.Forms.Panel();
+            this.dgEndereco = new System.Windows.Forms.DataGridView();
             this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,39 +63,47 @@
             this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnEndereco = new System.Windows.Forms.Button();
+            this.tabCliente = new System.Windows.Forms.TabControl();
+            this.tabAdiciona = new System.Windows.Forms.TabPage();
+            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabConsulta = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
             this.txtCodEnd = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.pEndereco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
             this.tabCliente.SuspendLayout();
             this.tabAdiciona.SuspendLayout();
-            this.tabConsulta.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
+            this.tabConsulta.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNome
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nome:";
+            this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(30, 25);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(47, 16);
+            this.lblNome.TabIndex = 0;
+            this.lblNome.Text = "Nome:";
             // 
-            // label2
+            // lblEmail
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(200, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Email:";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.Black;
+            this.lblEmail.Location = new System.Drawing.Point(200, 25);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(44, 16);
+            this.lblEmail.TabIndex = 1;
+            this.lblEmail.Text = "Email:";
             // 
             // label3
             // 
@@ -110,7 +112,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(372, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 16);
+            this.label3.Size = new System.Drawing.Size(75, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "CPF/CNPJ:";
             // 
@@ -121,7 +123,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(419, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 16);
+            this.label4.Size = new System.Drawing.Size(28, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Rg:";
             // 
@@ -132,7 +134,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(30, 77);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 16);
+            this.label5.Size = new System.Drawing.Size(52, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Celular:";
             // 
@@ -143,12 +145,13 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(200, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 16);
+            this.label6.Size = new System.Drawing.Size(49, 16);
             this.label6.TabIndex = 5;
             this.label6.Text = "Senha:";
             // 
             // txtNome
             // 
+            this.txtNome.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtNome.Location = new System.Drawing.Point(83, 24);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
@@ -156,6 +159,8 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.White;
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtEmail.Location = new System.Drawing.Point(250, 24);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
@@ -227,128 +232,6 @@
             this.dgCliente.TabIndex = 13;
             this.dgCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCliente_CellClick);
             // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(422, 133);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(191, 48);
-            this.btnExcluir.TabIndex = 14;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(225, 133);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(191, 48);
-            this.btnCancelar.TabIndex = 17;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // pEndereco
-            // 
-            this.pEndereco.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pEndereco.Controls.Add(this.dgEndereco);
-            this.pEndereco.Location = new System.Drawing.Point(12, 9);
-            this.pEndereco.Name = "pEndereco";
-            this.pEndereco.Size = new System.Drawing.Size(402, 579);
-            this.pEndereco.TabIndex = 18;
-            // 
-            // dgEndereco
-            // 
-            this.dgEndereco.AllowUserToAddRows = false;
-            this.dgEndereco.AllowUserToDeleteRows = false;
-            this.dgEndereco.AutoGenerateColumns = false;
-            this.dgEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cEPDataGridViewTextBoxColumn,
-            this.ruaDataGridViewTextBoxColumn,
-            this.numeroDataGridViewTextBoxColumn,
-            this.bairroDataGridViewTextBoxColumn,
-            this.cidadeDataGridViewTextBoxColumn,
-            this.paisDataGridViewTextBoxColumn,
-            this.codigoDataGridViewTextBoxColumn1});
-            this.dgEndereco.DataSource = this.enderecoClienteBindingSource;
-            this.dgEndereco.Location = new System.Drawing.Point(45, 27);
-            this.dgEndereco.Name = "dgEndereco";
-            this.dgEndereco.ReadOnly = true;
-            this.dgEndereco.Size = new System.Drawing.Size(307, 170);
-            this.dgEndereco.TabIndex = 0;
-            this.dgEndereco.Visible = false;
-            // 
-            // btnEndereco
-            // 
-            this.btnEndereco.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEndereco.Location = new System.Drawing.Point(463, 36);
-            this.btnEndereco.Name = "btnEndereco";
-            this.btnEndereco.Size = new System.Drawing.Size(191, 48);
-            this.btnEndereco.TabIndex = 19;
-            this.btnEndereco.Text = "Exibir Endereço";
-            this.btnEndereco.UseVisualStyleBackColor = false;
-            this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);
-            // 
-            // tabCliente
-            // 
-            this.tabCliente.Controls.Add(this.tabAdiciona);
-            this.tabCliente.Controls.Add(this.tabConsulta);
-            this.tabCliente.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabCliente.Location = new System.Drawing.Point(0, 0);
-            this.tabCliente.Name = "tabCliente";
-            this.tabCliente.SelectedIndex = 0;
-            this.tabCliente.Size = new System.Drawing.Size(1619, 933);
-            this.tabCliente.TabIndex = 20;
-            // 
-            // tabAdiciona
-            // 
-            this.tabAdiciona.Controls.Add(this.label1);
-            this.tabAdiciona.Controls.Add(this.label2);
-            this.tabAdiciona.Controls.Add(this.label3);
-            this.tabAdiciona.Controls.Add(this.dgCliente);
-            this.tabAdiciona.Controls.Add(this.btnPesquisa);
-            this.tabAdiciona.Controls.Add(this.btnCancelar);
-            this.tabAdiciona.Controls.Add(this.label4);
-            this.tabAdiciona.Controls.Add(this.label5);
-            this.tabAdiciona.Controls.Add(this.btnExcluir);
-            this.tabAdiciona.Controls.Add(this.label6);
-            this.tabAdiciona.Controls.Add(this.txtAdiciona);
-            this.tabAdiciona.Controls.Add(this.txtNome);
-            this.tabAdiciona.Controls.Add(this.txtEmail);
-            this.tabAdiciona.Controls.Add(this.txtSenha);
-            this.tabAdiciona.Controls.Add(this.txtCpf_Cnpj);
-            this.tabAdiciona.Controls.Add(this.txtCelular);
-            this.tabAdiciona.Controls.Add(this.txtRg);
-            this.tabAdiciona.Controls.Add(this.pictureBox1);
-            this.tabAdiciona.Location = new System.Drawing.Point(4, 22);
-            this.tabAdiciona.Name = "tabAdiciona";
-            this.tabAdiciona.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAdiciona.Size = new System.Drawing.Size(1611, 907);
-            this.tabAdiciona.TabIndex = 0;
-            this.tabAdiciona.Text = "Adicionar Cliente";
-            this.tabAdiciona.UseVisualStyleBackColor = true;
-            // 
-            // tabConsulta
-            // 
-            this.tabConsulta.Controls.Add(this.txtCodEnd);
-            this.tabConsulta.Controls.Add(this.btnEndereco);
-            this.tabConsulta.Controls.Add(this.pEndereco);
-            this.tabConsulta.Location = new System.Drawing.Point(4, 22);
-            this.tabConsulta.Name = "tabConsulta";
-            this.tabConsulta.Padding = new System.Windows.Forms.Padding(3);
-            this.tabConsulta.Size = new System.Drawing.Size(1611, 907);
-            this.tabConsulta.TabIndex = 1;
-            this.tabConsulta.Text = "Consulta de Clientes";
-            this.tabConsulta.UseVisualStyleBackColor = true;
-            // 
             // codigoDataGridViewTextBoxColumn
             // 
             this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
@@ -405,31 +288,62 @@
             // 
             this.clienteBindingSource.DataSource = typeof(Dados.Cliente);
             // 
-            // btnPesquisa
+            // btnExcluir
             // 
-            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_501;
-            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisa.Location = new System.Drawing.Point(619, 133);
-            this.btnPesquisa.Name = "btnPesquisa";
-            this.btnPesquisa.Size = new System.Drawing.Size(191, 59);
-            this.btnPesquisa.TabIndex = 15;
-            this.btnPesquisa.Text = "  Pesquisar";
-            this.btnPesquisa.UseVisualStyleBackColor = false;
-            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(422, 133);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(191, 48);
+            this.btnExcluir.TabIndex = 14;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // pictureBox1
+            // btnCancelar
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::View.Properties.Resources.tab;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1605, 901);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(225, 133);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(191, 48);
+            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // pEndereco
+            // 
+            this.pEndereco.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pEndereco.Controls.Add(this.dgEndereco);
+            this.pEndereco.Location = new System.Drawing.Point(24, 149);
+            this.pEndereco.Name = "pEndereco";
+            this.pEndereco.Size = new System.Drawing.Size(815, 254);
+            this.pEndereco.TabIndex = 18;
+            // 
+            // dgEndereco
+            // 
+            this.dgEndereco.AllowUserToAddRows = false;
+            this.dgEndereco.AllowUserToDeleteRows = false;
+            this.dgEndereco.AutoGenerateColumns = false;
+            this.dgEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cEPDataGridViewTextBoxColumn,
+            this.ruaDataGridViewTextBoxColumn,
+            this.numeroDataGridViewTextBoxColumn,
+            this.bairroDataGridViewTextBoxColumn,
+            this.cidadeDataGridViewTextBoxColumn,
+            this.paisDataGridViewTextBoxColumn,
+            this.codigoDataGridViewTextBoxColumn1});
+            this.dgEndereco.DataSource = this.enderecoClienteBindingSource;
+            this.dgEndereco.Location = new System.Drawing.Point(64, 3);
+            this.dgEndereco.Name = "dgEndereco";
+            this.dgEndereco.ReadOnly = true;
+            this.dgEndereco.Size = new System.Drawing.Size(744, 238);
+            this.dgEndereco.TabIndex = 0;
+            this.dgEndereco.Visible = false;
             // 
             // cEPDataGridViewTextBoxColumn
             // 
@@ -484,11 +398,112 @@
             // 
             this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
             // 
+            // btnEndereco
+            // 
+            this.btnEndereco.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEndereco.Location = new System.Drawing.Point(527, 59);
+            this.btnEndereco.Name = "btnEndereco";
+            this.btnEndereco.Size = new System.Drawing.Size(191, 36);
+            this.btnEndereco.TabIndex = 19;
+            this.btnEndereco.Text = "Exibir Endereço";
+            this.btnEndereco.UseVisualStyleBackColor = false;
+            this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);
+            // 
+            // tabCliente
+            // 
+            this.tabCliente.Controls.Add(this.tabAdiciona);
+            this.tabCliente.Controls.Add(this.tabConsulta);
+            this.tabCliente.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabCliente.Location = new System.Drawing.Point(0, 0);
+            this.tabCliente.Name = "tabCliente";
+            this.tabCliente.SelectedIndex = 0;
+            this.tabCliente.Size = new System.Drawing.Size(1619, 933);
+            this.tabCliente.TabIndex = 20;
+            // 
+            // tabAdiciona
+            // 
+            this.tabAdiciona.Controls.Add(this.lblNome);
+            this.tabAdiciona.Controls.Add(this.lblEmail);
+            this.tabAdiciona.Controls.Add(this.label3);
+            this.tabAdiciona.Controls.Add(this.dgCliente);
+            this.tabAdiciona.Controls.Add(this.btnPesquisa);
+            this.tabAdiciona.Controls.Add(this.btnCancelar);
+            this.tabAdiciona.Controls.Add(this.label4);
+            this.tabAdiciona.Controls.Add(this.label5);
+            this.tabAdiciona.Controls.Add(this.btnExcluir);
+            this.tabAdiciona.Controls.Add(this.label6);
+            this.tabAdiciona.Controls.Add(this.txtAdiciona);
+            this.tabAdiciona.Controls.Add(this.txtNome);
+            this.tabAdiciona.Controls.Add(this.txtEmail);
+            this.tabAdiciona.Controls.Add(this.txtSenha);
+            this.tabAdiciona.Controls.Add(this.txtCpf_Cnpj);
+            this.tabAdiciona.Controls.Add(this.txtCelular);
+            this.tabAdiciona.Controls.Add(this.txtRg);
+            this.tabAdiciona.Controls.Add(this.pictureBox1);
+            this.tabAdiciona.Location = new System.Drawing.Point(4, 22);
+            this.tabAdiciona.Name = "tabAdiciona";
+            this.tabAdiciona.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAdiciona.Size = new System.Drawing.Size(1611, 907);
+            this.tabAdiciona.TabIndex = 0;
+            this.tabAdiciona.Text = "Adicionar Cliente";
+            this.tabAdiciona.UseVisualStyleBackColor = true;
+            // 
+            // btnPesquisa
+            // 
+            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_501;
+            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisa.Location = new System.Drawing.Point(619, 133);
+            this.btnPesquisa.Name = "btnPesquisa";
+            this.btnPesquisa.Size = new System.Drawing.Size(191, 48);
+            this.btnPesquisa.TabIndex = 15;
+            this.btnPesquisa.Text = "  Pesquisar";
+            this.btnPesquisa.UseVisualStyleBackColor = false;
+            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::View.Properties.Resources.tab;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1605, 901);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabConsulta
+            // 
+            this.tabConsulta.Controls.Add(this.label7);
+            this.tabConsulta.Controls.Add(this.txtCodEnd);
+            this.tabConsulta.Controls.Add(this.btnEndereco);
+            this.tabConsulta.Controls.Add(this.pEndereco);
+            this.tabConsulta.Location = new System.Drawing.Point(4, 22);
+            this.tabConsulta.Name = "tabConsulta";
+            this.tabConsulta.Padding = new System.Windows.Forms.Padding(3);
+            this.tabConsulta.Size = new System.Drawing.Size(1611, 907);
+            this.tabConsulta.TabIndex = 1;
+            this.tabConsulta.Text = "Consulta de Clientes";
+            this.tabConsulta.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(116, 72);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 13);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Código do Cliente:";
+            // 
             // txtCodEnd
             // 
-            this.txtCodEnd.Location = new System.Drawing.Point(513, 119);
+            this.txtCodEnd.Location = new System.Drawing.Point(238, 69);
             this.txtCodEnd.Name = "txtCodEnd";
-            this.txtCodEnd.Size = new System.Drawing.Size(100, 20);
+            this.txtCodEnd.Size = new System.Drawing.Size(119, 20);
             this.txtCodEnd.TabIndex = 20;
             // 
             // FrmCliente
@@ -501,24 +516,24 @@
             this.Text = "FrmCliente";
             this.Load += new System.EventHandler(this.FrmCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             this.pEndereco.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             this.tabCliente.ResumeLayout(false);
             this.tabAdiciona.ResumeLayout(false);
             this.tabAdiciona.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabConsulta.ResumeLayout(false);
             this.tabConsulta.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -559,5 +574,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabConsulta;
         private System.Windows.Forms.TextBox txtCodEnd;
+        private System.Windows.Forms.Label label7;
     }
 }

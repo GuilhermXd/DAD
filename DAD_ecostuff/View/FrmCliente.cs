@@ -16,6 +16,7 @@ namespace View
 {
     public partial class FrmCliente : Form
     {
+        int codigo = -1;
         private readonly  ClienteService _clienteService;
         private readonly Endereco_ClienteService _enderecoService;
         DataTable dtCliente_Endereco = new DataTable();
@@ -167,23 +168,25 @@ namespace View
         }
         private void txtAdiciona_Click(object sender, EventArgs e)
         {
-            int? codigo;
-            string nome = txtNome.Text;
+         string nome = txtNome.Text;
          string email = txtEmail.Text;
          string cpf_cnpj = txtCpf_Cnpj.Text;
          string rg = txtRg.Text;
          string celular = txtCelular.Text;
          string senha = txtSenha.Text;
 
-            string resultado;
-
-            resultado = _clienteService.Update(nome, email, cpf_cnpj, rg, celular, senha,null);
-            if (resultado == "SUCESSO")
-            {
-                MessageBox.Show("Adicionado com Sucesso!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
-            atualiza();
+        try
+        {
+            _clienteService.Update(nome, email, cpf_cnpj, rg, celular, senha, null);
+            MessageBox.Show("Cliente Cadastrado", "Sucesso", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        }
+        catch (ArgumentException ex)
+        {
+            MessageBox.Show("Campos obrigatórios não preenchidos", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            lblEmail.ForeColor = Color.Red;
+            lblNome.ForeColor = Color.Red;
+        }
+         atualiza();
 
         }
 
@@ -194,41 +197,24 @@ namespace View
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            string resultado;
-            string msg;
-            DialogResult result = MessageBox.Show("Deseja confirmar exclusão?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (result == DialogResult.Yes)
+            if (codigo == -1)
+                MessageBox.Show("Selecione uma linha", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            else
             {
-                resultado = _clienteService.Remove(codigo);
-                atualiza();
-                if (resultado != "SUCESSO")
+                DialogResult result = MessageBox.Show("Deseja confirmar exclusão?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (result == DialogResult.Yes)
                 {
-                    msg = "A Operação Falhou";
+                    _clienteService.Remove(codigo);
+                    MessageBox.Show("Cliente Removido com Sucesso", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    atualiza();
                 }
-                else
-                {
-                    msg = "A operação foi um Sucesso!";
-                }
-                MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (result == DialogResult.No)
-            {
-                msg = "A operação foi Cancelada!";
-                MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-
         }
         
         
-        int codigo;
+
         private void dgCliente_CellClick(object sender, DataGridViewCellEventArgs e) 
         {
-
-            if (e.RowIndex <= 0)
-            {
-                return;
-            }
             string id = dgCliente.Rows[e.RowIndex].Cells[0].Value.ToString();
             codigo = int.Parse(id);
             dgCliente.Refresh();
