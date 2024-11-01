@@ -1,6 +1,9 @@
 ﻿using Dados;
+using FluentValidation.Results;
+using MySqlX.XDevAPI;
 using Negocio;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
@@ -45,7 +48,28 @@ namespace View
             int cicloiluminacao = 0;
             string tiposolo = txtTipodeSolo.Text;
             string nomecientifico = txtNomeCientifico.Text;
-
+            Planta planta = new Planta();
+            planta.Nome = txtNome.Text;
+            planta.Observacoes = txtObservacoes.Text;
+            planta.Datadeverificacao = DateTime.Now; ;
+            planta.Ciclodeagua = 0;
+            planta.Cicloiluminacao = 0;
+            planta.Tiposolo = txtTipodeSolo.Text;
+            planta.Nomecientifico = txtNomeCientifico.Text;
+            if (planta != null)
+            {
+                PlantaValidator validator = new PlantaValidator();
+                ValidationResult results = validator.Validate(planta);
+                IList<ValidationFailure> failures = results.Errors;
+                if (!results.IsValid)
+                {
+                    foreach (ValidationFailure failure in failures)
+                    {
+                        MessageBox.Show(failure.ErrorMessage, "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+            }
             string resultado;
             if(!string.IsNullOrEmpty(txtCicloAgua.Text))
                 ciclodeagua = int.Parse(txtCicloAgua.Text);

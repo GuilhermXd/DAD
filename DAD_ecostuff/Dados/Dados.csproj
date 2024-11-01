@@ -104,6 +104,7 @@
     <Compile Include="Endereco_ClienteRepository.cs" />
     <Compile Include="Planta.cs" />
     <Compile Include="PlantaRepository.cs" />
+    <Compile Include="PlantaValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -176,13 +176,15 @@ namespace View
          string rg = txtRg.Text;
          string celular = txtCelular.Text;
          string senha = txtSenha.Text;
+
             Cliente cliente = new Cliente();
             cliente.Nome = txtNome.Text;
-             cliente.Email = txtEmail.Text;
+            cliente.Email = txtEmail.Text;
             cliente.Cpf_Cnpj = txtCpf_Cnpj.Text;
             cliente.Rg = txtRg.Text;
             cliente.Celular = txtCelular.Text;
             cliente.Senha = txtSenha.Text;
+
             if (cliente != null)
             {
                 ClienteValidator validator = new ClienteValidator();
