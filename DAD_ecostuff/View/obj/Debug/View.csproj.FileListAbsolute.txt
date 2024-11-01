@@ -381,3 +381,5 @@ C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.exe
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.pdb
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmAb.resources
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmInicio.resources
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\FluentValidation.dll
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\FluentValidation.xml

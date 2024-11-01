@@ -12,6 +12,8 @@ using Negocio;
 using System.Configuration;
 using System.Data.SqlClient;
 using Org.BouncyCastle.Pqc.Crypto.Lms;
+using FluentValidation.Results;
+using MySqlX.XDevAPI;
 namespace View
 {
     public partial class FrmCliente : Form
@@ -174,8 +176,28 @@ namespace View
          string rg = txtRg.Text;
          string celular = txtCelular.Text;
          string senha = txtSenha.Text;
-
-        try
+            Cliente cliente = new Cliente();
+            cliente.Nome = txtNome.Text;
+             cliente.Email = txtEmail.Text;
+            cliente.Cpf_Cnpj = txtCpf_Cnpj.Text;
+            cliente.Rg = txtRg.Text;
+            cliente.Celular = txtCelular.Text;
+            cliente.Senha = txtSenha.Text;
+            if (cliente != null)
+            {
+                ClienteValidator validator = new ClienteValidator();
+                ValidationResult results = validator.Validate(cliente);
+                IList<ValidationFailure> failures = results.Errors;
+                if (!results.IsValid)
+                {
+                    foreach (ValidationFailure failure in failures)
+                    {
+                        MessageBox.Show(failure.ErrorMessage, "Aviso do sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+            }
+            try
         {
             _clienteService.Update(nome, email, cpf_cnpj, rg, celular, senha, null);
             MessageBox.Show("Cliente Cadastrado", "Sucesso", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);

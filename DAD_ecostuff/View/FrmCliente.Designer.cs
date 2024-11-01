@@ -71,6 +71,7 @@
             this.tabConsulta = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCodEnd = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.pEndereco.SuspendLayout();
@@ -80,6 +81,7 @@
             this.tabAdiciona.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabConsulta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNome
@@ -506,6 +508,10 @@
             this.txtCodEnd.Size = new System.Drawing.Size(119, 20);
             this.txtCodEnd.TabIndex = 20;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -526,6 +532,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabConsulta.ResumeLayout(false);
             this.tabConsulta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -575,5 +582,6 @@
         private System.Windows.Forms.TabPage tabConsulta;
         private System.Windows.Forms.TextBox txtCodEnd;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

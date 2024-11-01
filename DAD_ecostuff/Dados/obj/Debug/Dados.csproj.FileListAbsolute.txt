@@ -278,3 +278,5 @@ C:\Users\massa\Desktop\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.csproj.CoreCompile
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.csproj.Up2Date
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.dll
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.pdb
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\Dados\bin\Debug\FluentValidation.dll
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\Dados\bin\Debug\FluentValidation.xml

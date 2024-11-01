@@ -299,3 +299,5 @@ C:\Users\massa\Desktop\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.csproj.CoreCom
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.dll
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.pdb
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\Negocio\bin\Debug\FluentValidation.dll
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\Negocio\bin\Debug\FluentValidation.xml
