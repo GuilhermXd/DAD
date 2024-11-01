@@ -320,7 +320,7 @@
             this.pEndereco.Controls.Add(this.dgEndereco);
             this.pEndereco.Location = new System.Drawing.Point(24, 149);
             this.pEndereco.Name = "pEndereco";
-            this.pEndereco.Size = new System.Drawing.Size(815, 254);
+            this.pEndereco.Size = new System.Drawing.Size(744, 254);
             this.pEndereco.TabIndex = 18;
             // 
             // dgEndereco
@@ -338,10 +338,10 @@
             this.paisDataGridViewTextBoxColumn,
             this.codigoDataGridViewTextBoxColumn1});
             this.dgEndereco.DataSource = this.enderecoClienteBindingSource;
-            this.dgEndereco.Location = new System.Drawing.Point(64, 3);
+            this.dgEndereco.Location = new System.Drawing.Point(0, 0);
             this.dgEndereco.Name = "dgEndereco";
             this.dgEndereco.ReadOnly = true;
-            this.dgEndereco.Size = new System.Drawing.Size(744, 238);
+            this.dgEndereco.Size = new System.Drawing.Size(726, 254);
             this.dgEndereco.TabIndex = 0;
             this.dgEndereco.Visible = false;
             // 
