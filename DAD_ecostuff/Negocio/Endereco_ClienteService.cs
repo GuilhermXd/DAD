@@ -67,6 +67,7 @@ namespace Negocio
         {
             return _repository.filterByClientCodigo(clienteCodigo);
         }
+    
 
 
     }

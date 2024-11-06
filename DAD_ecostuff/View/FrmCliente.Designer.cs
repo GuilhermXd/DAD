@@ -43,6 +43,13 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtAdiciona = new System.Windows.Forms.Button();
             this.dgCliente = new System.Windows.Forms.DataGridView();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.tabCliente = new System.Windows.Forms.TabControl();
+            this.tabAdiciona = new System.Windows.Forms.TabPage();
+            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,37 +58,31 @@
             this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pEndereco = new System.Windows.Forms.Panel();
             this.dgEndereco = new System.Windows.Forms.DataGridView();
-            this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bairroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bairroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEndereco = new System.Windows.Forms.Button();
-            this.tabCliente = new System.Windows.Forms.TabControl();
-            this.tabAdiciona = new System.Windows.Forms.TabPage();
-            this.btnPesquisa = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabConsulta = new System.Windows.Forms.TabPage();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtCodEnd = new System.Windows.Forms.TextBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnCancelaConsulta = new System.Windows.Forms.Button();
+            this.tabConsulta = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            this.pEndereco.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
             this.tabCliente.SuspendLayout();
             this.tabAdiciona.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabConsulta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
+            this.pEndereco.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).BeginInit();
+            this.tabConsulta.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNome
@@ -234,62 +235,6 @@
             this.dgCliente.TabIndex = 13;
             this.dgCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCliente_CellClick);
             // 
-            // codigoDataGridViewTextBoxColumn
-            // 
-            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
-            this.codigoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
-            this.emailDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // cpfCnpjDataGridViewTextBoxColumn
-            // 
-            this.cpfCnpjDataGridViewTextBoxColumn.DataPropertyName = "Cpf_Cnpj";
-            this.cpfCnpjDataGridViewTextBoxColumn.HeaderText = "Cpf_Cnpj";
-            this.cpfCnpjDataGridViewTextBoxColumn.Name = "cpfCnpjDataGridViewTextBoxColumn";
-            this.cpfCnpjDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cpfCnpjDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // rgDataGridViewTextBoxColumn
-            // 
-            this.rgDataGridViewTextBoxColumn.DataPropertyName = "Rg";
-            this.rgDataGridViewTextBoxColumn.HeaderText = "Rg";
-            this.rgDataGridViewTextBoxColumn.Name = "rgDataGridViewTextBoxColumn";
-            this.rgDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // celularDataGridViewTextBoxColumn
-            // 
-            this.celularDataGridViewTextBoxColumn.DataPropertyName = "Celular";
-            this.celularDataGridViewTextBoxColumn.HeaderText = "Celular";
-            this.celularDataGridViewTextBoxColumn.Name = "celularDataGridViewTextBoxColumn";
-            this.celularDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // senhaDataGridViewTextBoxColumn
-            // 
-            this.senhaDataGridViewTextBoxColumn.DataPropertyName = "Senha";
-            this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
-            this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
-            this.senhaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataSource = typeof(Dados.Cliente);
-            // 
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -315,103 +260,6 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // pEndereco
-            // 
-            this.pEndereco.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pEndereco.Controls.Add(this.dgEndereco);
-            this.pEndereco.Location = new System.Drawing.Point(24, 149);
-            this.pEndereco.Name = "pEndereco";
-            this.pEndereco.Size = new System.Drawing.Size(744, 254);
-            this.pEndereco.TabIndex = 18;
-            // 
-            // dgEndereco
-            // 
-            this.dgEndereco.AllowUserToAddRows = false;
-            this.dgEndereco.AllowUserToDeleteRows = false;
-            this.dgEndereco.AutoGenerateColumns = false;
-            this.dgEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cEPDataGridViewTextBoxColumn,
-            this.ruaDataGridViewTextBoxColumn,
-            this.numeroDataGridViewTextBoxColumn,
-            this.bairroDataGridViewTextBoxColumn,
-            this.cidadeDataGridViewTextBoxColumn,
-            this.paisDataGridViewTextBoxColumn,
-            this.codigoDataGridViewTextBoxColumn1});
-            this.dgEndereco.DataSource = this.enderecoClienteBindingSource;
-            this.dgEndereco.Location = new System.Drawing.Point(0, 0);
-            this.dgEndereco.Name = "dgEndereco";
-            this.dgEndereco.ReadOnly = true;
-            this.dgEndereco.Size = new System.Drawing.Size(726, 254);
-            this.dgEndereco.TabIndex = 0;
-            this.dgEndereco.Visible = false;
-            // 
-            // cEPDataGridViewTextBoxColumn
-            // 
-            this.cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
-            this.cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
-            this.cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
-            this.cEPDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ruaDataGridViewTextBoxColumn
-            // 
-            this.ruaDataGridViewTextBoxColumn.DataPropertyName = "Rua";
-            this.ruaDataGridViewTextBoxColumn.HeaderText = "Rua";
-            this.ruaDataGridViewTextBoxColumn.Name = "ruaDataGridViewTextBoxColumn";
-            this.ruaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // numeroDataGridViewTextBoxColumn
-            // 
-            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn.HeaderText = "Numero";
-            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
-            this.numeroDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bairroDataGridViewTextBoxColumn
-            // 
-            this.bairroDataGridViewTextBoxColumn.DataPropertyName = "Bairro";
-            this.bairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
-            this.bairroDataGridViewTextBoxColumn.Name = "bairroDataGridViewTextBoxColumn";
-            this.bairroDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cidadeDataGridViewTextBoxColumn
-            // 
-            this.cidadeDataGridViewTextBoxColumn.DataPropertyName = "Cidade";
-            this.cidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
-            this.cidadeDataGridViewTextBoxColumn.Name = "cidadeDataGridViewTextBoxColumn";
-            this.cidadeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // paisDataGridViewTextBoxColumn
-            // 
-            this.paisDataGridViewTextBoxColumn.DataPropertyName = "Pais";
-            this.paisDataGridViewTextBoxColumn.HeaderText = "Pais";
-            this.paisDataGridViewTextBoxColumn.Name = "paisDataGridViewTextBoxColumn";
-            this.paisDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // codigoDataGridViewTextBoxColumn1
-            // 
-            this.codigoDataGridViewTextBoxColumn1.DataPropertyName = "Codigo";
-            this.codigoDataGridViewTextBoxColumn1.HeaderText = "Codigo";
-            this.codigoDataGridViewTextBoxColumn1.Name = "codigoDataGridViewTextBoxColumn1";
-            this.codigoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // enderecoClienteBindingSource
-            // 
-            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
-            // 
-            // btnEndereco
-            // 
-            this.btnEndereco.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEndereco.Location = new System.Drawing.Point(527, 59);
-            this.btnEndereco.Name = "btnEndereco";
-            this.btnEndereco.Size = new System.Drawing.Size(191, 36);
-            this.btnEndereco.TabIndex = 19;
-            this.btnEndereco.Text = "Exibir Endereço";
-            this.btnEndereco.UseVisualStyleBackColor = false;
-            this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);
             // 
             // tabCliente
             // 
@@ -478,8 +326,196 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // codigoDataGridViewTextBoxColumn
+            // 
+            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
+            this.codigoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            this.emailDataGridViewTextBoxColumn.Width = 130;
+            // 
+            // cpfCnpjDataGridViewTextBoxColumn
+            // 
+            this.cpfCnpjDataGridViewTextBoxColumn.DataPropertyName = "Cpf_Cnpj";
+            this.cpfCnpjDataGridViewTextBoxColumn.HeaderText = "Cpf_Cnpj";
+            this.cpfCnpjDataGridViewTextBoxColumn.Name = "cpfCnpjDataGridViewTextBoxColumn";
+            this.cpfCnpjDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cpfCnpjDataGridViewTextBoxColumn.Width = 130;
+            // 
+            // rgDataGridViewTextBoxColumn
+            // 
+            this.rgDataGridViewTextBoxColumn.DataPropertyName = "Rg";
+            this.rgDataGridViewTextBoxColumn.HeaderText = "Rg";
+            this.rgDataGridViewTextBoxColumn.Name = "rgDataGridViewTextBoxColumn";
+            this.rgDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // celularDataGridViewTextBoxColumn
+            // 
+            this.celularDataGridViewTextBoxColumn.DataPropertyName = "Celular";
+            this.celularDataGridViewTextBoxColumn.HeaderText = "Celular";
+            this.celularDataGridViewTextBoxColumn.Name = "celularDataGridViewTextBoxColumn";
+            this.celularDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // senhaDataGridViewTextBoxColumn
+            // 
+            this.senhaDataGridViewTextBoxColumn.DataPropertyName = "Senha";
+            this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
+            this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
+            this.senhaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataSource = typeof(Dados.Cliente);
+            // 
+            // enderecoClienteBindingSource
+            // 
+            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
+            // 
+            // pEndereco
+            // 
+            this.pEndereco.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pEndereco.Controls.Add(this.dgEndereco);
+            this.pEndereco.Location = new System.Drawing.Point(24, 149);
+            this.pEndereco.Name = "pEndereco";
+            this.pEndereco.Size = new System.Drawing.Size(744, 254);
+            this.pEndereco.TabIndex = 18;
+            // 
+            // dgEndereco
+            // 
+            this.dgEndereco.AllowUserToAddRows = false;
+            this.dgEndereco.AllowUserToDeleteRows = false;
+            this.dgEndereco.AutoGenerateColumns = false;
+            this.dgEndereco.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cEPDataGridViewTextBoxColumn,
+            this.ruaDataGridViewTextBoxColumn,
+            this.numeroDataGridViewTextBoxColumn,
+            this.bairroDataGridViewTextBoxColumn,
+            this.cidadeDataGridViewTextBoxColumn,
+            this.paisDataGridViewTextBoxColumn,
+            this.codigoDataGridViewTextBoxColumn1});
+            this.dgEndereco.DataSource = this.enderecoClienteBindingSource;
+            this.dgEndereco.Location = new System.Drawing.Point(0, 0);
+            this.dgEndereco.Name = "dgEndereco";
+            this.dgEndereco.ReadOnly = true;
+            this.dgEndereco.Size = new System.Drawing.Size(726, 254);
+            this.dgEndereco.TabIndex = 0;
+            this.dgEndereco.Visible = false;
+            // 
+            // codigoDataGridViewTextBoxColumn1
+            // 
+            this.codigoDataGridViewTextBoxColumn1.DataPropertyName = "Codigo";
+            this.codigoDataGridViewTextBoxColumn1.HeaderText = "Codigo";
+            this.codigoDataGridViewTextBoxColumn1.Name = "codigoDataGridViewTextBoxColumn1";
+            this.codigoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // paisDataGridViewTextBoxColumn
+            // 
+            this.paisDataGridViewTextBoxColumn.DataPropertyName = "Pais";
+            this.paisDataGridViewTextBoxColumn.HeaderText = "Pais";
+            this.paisDataGridViewTextBoxColumn.Name = "paisDataGridViewTextBoxColumn";
+            this.paisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cidadeDataGridViewTextBoxColumn
+            // 
+            this.cidadeDataGridViewTextBoxColumn.DataPropertyName = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.Name = "cidadeDataGridViewTextBoxColumn";
+            this.cidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bairroDataGridViewTextBoxColumn
+            // 
+            this.bairroDataGridViewTextBoxColumn.DataPropertyName = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.Name = "bairroDataGridViewTextBoxColumn";
+            this.bairroDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // numeroDataGridViewTextBoxColumn
+            // 
+            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
+            this.numeroDataGridViewTextBoxColumn.HeaderText = "Numero";
+            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
+            this.numeroDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ruaDataGridViewTextBoxColumn
+            // 
+            this.ruaDataGridViewTextBoxColumn.DataPropertyName = "Rua";
+            this.ruaDataGridViewTextBoxColumn.HeaderText = "Rua";
+            this.ruaDataGridViewTextBoxColumn.Name = "ruaDataGridViewTextBoxColumn";
+            this.ruaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cEPDataGridViewTextBoxColumn
+            // 
+            this.cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
+            this.cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
+            this.cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
+            this.cEPDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // btnEndereco
+            // 
+            this.btnEndereco.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEndereco.Location = new System.Drawing.Point(324, 52);
+            this.btnEndereco.Name = "btnEndereco";
+            this.btnEndereco.Size = new System.Drawing.Size(191, 36);
+            this.btnEndereco.TabIndex = 19;
+            this.btnEndereco.Text = "Exibir Endereço";
+            this.btnEndereco.UseVisualStyleBackColor = false;
+            this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);
+            // 
+            // txtCodEnd
+            // 
+            this.txtCodEnd.Location = new System.Drawing.Point(155, 62);
+            this.txtCodEnd.Name = "txtCodEnd";
+            this.txtCodEnd.Size = new System.Drawing.Size(119, 20);
+            this.txtCodEnd.TabIndex = 20;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(40, 69);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 13);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Código do Cliente:";
+            // 
+            // btnCancelaConsulta
+            // 
+            this.btnCancelaConsulta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelaConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelaConsulta.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelaConsulta.Location = new System.Drawing.Point(538, 50);
+            this.btnCancelaConsulta.Name = "btnCancelaConsulta";
+            this.btnCancelaConsulta.Size = new System.Drawing.Size(191, 48);
+            this.btnCancelaConsulta.TabIndex = 24;
+            this.btnCancelaConsulta.Text = "Cancelar";
+            this.btnCancelaConsulta.UseVisualStyleBackColor = false;
+            this.btnCancelaConsulta.Click += new System.EventHandler(this.btnCancelaConsulta_Click);
+            // 
             // tabConsulta
             // 
+            this.tabConsulta.Controls.Add(this.btnCancelaConsulta);
             this.tabConsulta.Controls.Add(this.label7);
             this.tabConsulta.Controls.Add(this.txtCodEnd);
             this.tabConsulta.Controls.Add(this.btnEndereco);
@@ -489,28 +525,8 @@
             this.tabConsulta.Padding = new System.Windows.Forms.Padding(3);
             this.tabConsulta.Size = new System.Drawing.Size(1611, 907);
             this.tabConsulta.TabIndex = 1;
-            this.tabConsulta.Text = "Consulta de Clientes";
+            this.tabConsulta.Text = "Consulta Dados do Clientes";
             this.tabConsulta.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(116, 72);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 13);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Código do Cliente:";
-            // 
-            // txtCodEnd
-            // 
-            this.txtCodEnd.Location = new System.Drawing.Point(238, 69);
-            this.txtCodEnd.Name = "txtCodEnd";
-            this.txtCodEnd.Size = new System.Drawing.Size(119, 20);
-            this.txtCodEnd.TabIndex = 20;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // FrmCliente
             // 
@@ -522,17 +538,17 @@
             this.Text = "FrmCliente";
             this.Load += new System.EventHandler(this.FrmCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            this.pEndereco.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             this.tabCliente.ResumeLayout(false);
             this.tabAdiciona.ResumeLayout(false);
             this.tabAdiciona.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
+            this.pEndereco.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).EndInit();
             this.tabConsulta.ResumeLayout(false);
             this.tabConsulta.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -557,7 +573,6 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnPesquisa;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Panel pEndereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
@@ -565,8 +580,19 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn rgDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn celularDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn senhaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dgEndereco;
         private System.Windows.Forms.BindingSource enderecoClienteBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clienteCodigoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TabControl tabCliente;
+        private System.Windows.Forms.TabPage tabAdiciona;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TabPage tabConsulta;
+        private System.Windows.Forms.Button btnCancelaConsulta;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtCodEnd;
+        private System.Windows.Forms.Button btnEndereco;
+        private System.Windows.Forms.Panel pEndereco;
+        private System.Windows.Forms.DataGridView dgEndereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ruaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
@@ -574,14 +600,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paisDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clienteCodigoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnEndereco;
-        private System.Windows.Forms.TabControl tabCliente;
-        private System.Windows.Forms.TabPage tabAdiciona;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TabPage tabConsulta;
-        private System.Windows.Forms.TextBox txtCodEnd;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
