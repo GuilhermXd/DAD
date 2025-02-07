@@ -14,6 +14,7 @@ using System.Data.SqlClient;
 using Org.BouncyCastle.Pqc.Crypto.Lms;
 using FluentValidation.Results;
 using MySqlX.XDevAPI;
+using Org.BouncyCastle.Asn1.X509;
 namespace View
 {
     public partial class FrmCliente : Form
@@ -41,9 +42,7 @@ namespace View
         private void carregaGridView()
         {
 
-            dtCliente_Endereco = _enderecoService.getAll();
-            dgEndereco.DataSource = dtCliente_Endereco;
-            dgEndereco.Refresh();
+            
 
             dtCliente = _clienteService.getAll();
             dgCliente.DataSource = dtCliente;
@@ -152,47 +151,34 @@ namespace View
             txtRg.Text = " ";
             txtCelular.Text = " ";
             txtSenha.Text = " ";
-            txtCodEnd.Text = " ";
+        }
+
+
+        private void OpenFormInPanel(Form form, Panel panel)
+        {
+            if (panel.Controls.Count > 0)
+            {
+                panel.Controls[0].Dispose();
+            }
+
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+
+
+            panel.Controls.Add(form);
+            form.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmEndereco frmendereco = new FrmEndereco();
+            OpenFormInPanel(frmendereco, pEnd);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            string msg;
-            msg = "A operação foi Cancelada!";
-            MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            pEndereco.Controls.Clear();
-            atualiza();
-            LimparText();
-        }
-        private void HabilitaGridEndereco()
-        {
-            dgEndereco.Visible = true;
-            dgEndereco.Dock = DockStyle.Fill;
-        }
 
-        private void btnEndereco_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                int codigo = int.Parse(txtCodEnd.Text);
-                DataTable dtEndereco = _enderecoService.filterByClienteCodigo(codigo);
-                if (dtEndereco != null)
-                {
-                    dgEndereco.DataSource = dtEndereco;
-                    dgEndereco.Refresh();
-                }
-            }
-            catch (Exception ex) 
-            {
-                MessageBox.Show(ex.Message, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            HabilitaGridEndereco();
-        }
-
-        private void btnCancelaConsulta_Click(object sender, EventArgs e)
-        {
-            LimparText();
-            dgEndereco.Visible = false;
         }
     }
 }
