@@ -22,8 +22,9 @@ namespace Dados
                 .EmailAddress().WithMessage("Um email válido é requerido!");
 
             RuleFor(cliente => cliente.Cpf_Cnpj)
-                .NotEmpty().WithMessage("Campo CPF/CNPJ é obrigatório!")
-                .Matches(@"^\d{11}$|^\d{14}$").WithMessage("O CPF deve ter 11 dígitos ou o CNPJ 14 dígitos.");
+        .NotEmpty().WithMessage("Campo CPF/CNPJ é obrigatório!")
+        .Matches(@"^\d{11}$|^\d{14}$").WithMessage("O CPF deve ter 11 dígitos ou o CNPJ 14 dígitos.")
+        .Matches(@"^(?!(\d)\1{10})\d{11}$").WithMessage("O CPF não pode ter todos os números repetidos.");
 
             RuleFor(cliente => cliente.Rg)
                 .NotEmpty().WithMessage("Campo RG é obrigatório!")

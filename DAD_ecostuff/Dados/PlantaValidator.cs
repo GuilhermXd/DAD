@@ -22,11 +22,11 @@ namespace Dados
                 .NotEmpty().WithMessage("Campo DATA DE VERIFICAÇÃO é obrigatório!")
                 .LessThanOrEqualTo(DateTime.Now).WithMessage("A DATA DE VERIFICAÇÃO não pode ser no futuro.");
 
-            RuleFor(planta => planta.Ciclodeagua)
-                .GreaterThan(0).WithMessage("O CICLO DE ÁGUA deve ser um valor positivo.");
+            /* RuleFor(planta => planta.Ciclodeagua)
+                 .GreaterThan(0).WithMessage("O CICLO DE ÁGUA deve ser um valor positivo.");
 
-            RuleFor(planta => planta.Cicloiluminacao)
-                .GreaterThan(0).WithMessage("O CICLO DE ILUMINAÇÃO deve ser um valor positivo.");
+             RuleFor(planta => planta.Cicloiluminacao)
+                 .GreaterThan(0).WithMessage("O CICLO DE ILUMINAÇÃO deve ser um valor positivo.");*/
 
             RuleFor(planta => planta.Tiposolo)
                 .NotEmpty().WithMessage("Campo TIPO DE SOLO é obrigatório!")

@@ -75,6 +75,9 @@ namespace View
                 ciclodeagua = int.Parse(txtCicloAgua.Text);
             if (!string.IsNullOrEmpty(txtCicloIluminacao.Text))
                 cicloiluminacao = int.Parse(txtCicloIluminacao.Text);
+            
+            
+
 
             resultado = _plantaService.Update(nome, nomecientifico, observacoes, datadeverificacao, ciclodeagua, cicloiluminacao, tiposolo, null);
             if (resultado == "SUCESSO")
@@ -86,6 +89,7 @@ namespace View
             atualiza();
 
         }
+        
 
         /* Botões */
         private void btnEditar_Click(object sender, EventArgs e)
