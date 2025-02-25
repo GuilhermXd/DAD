@@ -22,10 +22,11 @@ namespace Negocio
         private string bairro;
         private string cidade;
         private string pais;
+        private string estado;
         private int? codigo; // Código é a chave primária com Auto Increment
         private int? clienteCodigo;
 
-        public string Update(int cep, string rua, string numero, string bairro, string cidade, string pais, int? codigo, int? clienteCodigo)
+        public string Update(int cep, string rua, string numero, string bairro, string cidade, string pais, int? codigo, int? clienteCodigo, string estado)
         {
             // Insira as validações e regras de negócio aqui
             // Por exemplo, verificar se o email já está cadastrado
@@ -39,7 +40,8 @@ namespace Negocio
                 Numero = numero,
                 Bairro = bairro,
                 Cidade = cidade,
-                Pais = pais
+                Pais = pais,
+                Estado = estado
             };
 
             if (codigo == null)

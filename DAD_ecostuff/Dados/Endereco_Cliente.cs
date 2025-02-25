@@ -16,6 +16,7 @@ namespace Dados
         private string pais;
         private int? codigo; // Código é a chave primária com Auto Increment
         private int? clienteCodigo; // Chave estrangeira, cliente PK
+        private string estado;
 
 
         public int CEP
@@ -66,6 +67,11 @@ namespace Dados
             set { clienteCodigo = value; }
         }
 
-       
+        public string Estado
+        {
+
+            get{ return estado; }
+            set { estado = value; }
+        }
     }
 }

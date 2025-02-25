@@ -22,7 +22,7 @@ namespace Dados
                 MySqlCommand cmd = new MySqlCommand
                 {
                     Connection = Conexao.SqlCon,
-                    CommandText = "INSERT INTO ENDERECO_CLIENTE (CEP, RUA, NUMERO, BAIRRO, CIDADE, PAIS, CLIENTE_CODIGO) VALUES (@pCep, @pRua, @pNumero, @pBairro, @pCidade, @pPais, @pClienteCodigo)",
+                    CommandText = "INSERT INTO ENDERECO_CLIENTE (CEP, RUA, NUMERO, BAIRRO, CIDADE, PAIS, CLIENTE_CODIGO, ESTADO) VALUES (@pCep, @pRua, @pNumero, @pBairro, @pCidade, @pPais, @pClienteCodigo, @pEstado)",
                     CommandType = System.Data.CommandType.Text
                 };
 
@@ -34,6 +34,8 @@ namespace Dados
                 cmd.Parameters.AddWithValue("@pCidade", endereco.Cidade);
                 cmd.Parameters.AddWithValue("@pPais", endereco.Pais);
                 cmd.Parameters.AddWithValue("@pClienteCodigo", endereco.ClienteCodigo);
+                cmd.Parameters.AddWithValue("@pEstado", endereco.Estado);
+
 
                 // Executa o comando e verifica se a inserção foi bem-sucedida
                 resp = cmd.ExecuteNonQuery() == 1 ? "SUCESSO" : "FALHA";
@@ -65,7 +67,8 @@ namespace Dados
                                    "BAIRRO = @pBairro, " +
                                    "CIDADE = @pCidade, " +
                                    "PAIS = @pPais, " +
-                                   "CLIENTE_CODIGO = @pClienteCodigo " +
+                                   "CLIENTE_CODIGO = @pClienteCodigo " + 
+                                   "ESTADO = @pEstado"+
                                    "WHERE CODIGO = @pCodigo"; // Removida a vírgula antes do WHERE
 
                 using (MySqlCommand sqlCmd = new MySqlCommand(updateSql, Conexao.SqlCon))
@@ -78,6 +81,8 @@ namespace Dados
                     sqlCmd.Parameters.AddWithValue("@pPais", endereco.Pais);
                     sqlCmd.Parameters.AddWithValue("@pCodigo", endereco.Codigo);
                     sqlCmd.Parameters.AddWithValue("@pClienteCodigo", endereco.ClienteCodigo);
+                    sqlCmd.Parameters.AddWithValue("@pEstado", endereco.Estado);
+
 
                     resp = sqlCmd.ExecuteNonQuery() == 1 ? "SUCESSO" : "FALHA"; // Retorna SUCESSO ou FALHA
                 }
