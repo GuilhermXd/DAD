@@ -441,3 +441,4 @@ C:\Users\aluno\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.CoreCompile
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.Up2Date
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.exe
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.pdb
+C:\Users\aluno\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadEndereco.resources

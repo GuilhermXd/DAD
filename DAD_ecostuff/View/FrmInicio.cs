@@ -76,5 +76,11 @@ namespace View
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnEndereco_Click(object sender, EventArgs e)
+        {
+            FrmCadEndereco frmCadEndereco = new FrmCadEndereco();
+            OpenFormInPanel(frmCadEndereco, pForm);
+        }
     }
 }

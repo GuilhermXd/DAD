@@ -48,6 +48,8 @@ namespace View
             int cicloiluminacao = 0;
             string tiposolo = txtTipodeSolo.Text;
             string nomecientifico = txtNomeCientifico.Text;
+
+
             Planta planta = new Planta();
             planta.Nome = txtNome.Text;
             planta.Observacoes = txtObservacoes.Text;

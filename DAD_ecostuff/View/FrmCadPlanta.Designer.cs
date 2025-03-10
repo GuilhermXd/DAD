@@ -49,11 +49,6 @@ namespace View
             this.label7 = new System.Windows.Forms.Label();
             this.txtNomeCientifico = new System.Windows.Forms.TextBox();
             this.dgPlanta = new System.Windows.Forms.DataGridView();
-            this.btnPesquisa = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.plantaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.plantaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome_cientifico = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +57,11 @@ namespace View
             this.Cicloiluminacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiposolo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Datadeverificacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plantaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.plantaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgPlanta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.plantaBindingSource1)).BeginInit();
@@ -279,50 +279,6 @@ namespace View
             this.dgPlanta.TabIndex = 19;
             this.dgPlanta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPlanta_CellClick);
             // 
-            // btnPesquisa
-            // 
-            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_50;
-            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisa.Location = new System.Drawing.Point(754, 284);
-            this.btnPesquisa.Name = "btnPesquisa";
-            this.btnPesquisa.Size = new System.Drawing.Size(191, 56);
-            this.btnPesquisa.TabIndex = 22;
-            this.btnPesquisa.Text = "Pesquisar";
-            this.btnPesquisa.UseVisualStyleBackColor = false;
-            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluir.Location = new System.Drawing.Point(754, 219);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(191, 48);
-            this.btnExcluir.TabIndex = 20;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // plantaBindingSource1
-            // 
-            this.plantaBindingSource1.DataSource = typeof(Dados.Planta);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::View.Properties.Resources.Design_sem_nome__1_3;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1103, 646);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // codigoDataGridViewTextBoxColumn
             // 
             this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
@@ -379,6 +335,50 @@ namespace View
             this.Datadeverificacao.HeaderText = "Datadeverificacao";
             this.Datadeverificacao.Name = "Datadeverificacao";
             this.Datadeverificacao.ReadOnly = true;
+            // 
+            // plantaBindingSource1
+            // 
+            this.plantaBindingSource1.DataSource = typeof(Dados.Planta);
+            // 
+            // btnPesquisa
+            // 
+            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_50;
+            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisa.Location = new System.Drawing.Point(754, 284);
+            this.btnPesquisa.Name = "btnPesquisa";
+            this.btnPesquisa.Size = new System.Drawing.Size(191, 56);
+            this.btnPesquisa.TabIndex = 22;
+            this.btnPesquisa.Text = "Pesquisar";
+            this.btnPesquisa.UseVisualStyleBackColor = false;
+            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcluir.Location = new System.Drawing.Point(754, 219);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(191, 48);
+            this.btnExcluir.TabIndex = 20;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::View.Properties.Resources.Design_sem_nome__1_3;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1103, 646);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmCadPlanta
             // 

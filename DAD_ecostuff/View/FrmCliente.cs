@@ -42,7 +42,7 @@ namespace View
         private void carregaGridView()
         {
 
-            
+
 
             dtCliente = _clienteService.getAll();
             dgCliente.DataSource = dtCliente;
@@ -52,7 +52,64 @@ namespace View
         {
             dgCliente.DataSource = _clienteService.getAll();
         }
-        private void txtAdiciona_Click(object sender, EventArgs e)
+
+
+
+        private void FrmCliente_Load(object sender, EventArgs e)
+        {
+            carregaGridView();
+        }
+
+
+
+
+
+        private void dgCliente_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string id = dgCliente.Rows[e.RowIndex].Cells[0].Value.ToString();
+            codigo = int.Parse(id);
+            dgCliente.Refresh();
+        }
+
+
+
+        public void LimparText()
+        {
+            txtNome.Text = " ";
+            txtEmail.Text = " ";
+            txtCpf_Cnpj.Text = " ";
+            txtRg.Text = " ";
+            txtCelular.Text = " ";
+            txtSenha.Text = " ";
+        }
+
+
+        private void OpenFormInPanel(Form form, Panel panel)
+        {
+            if (panel.Controls.Count > 0)
+            {
+                panel.Controls[0].Dispose();
+            }
+
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+
+
+            panel.Controls.Add(form);
+            form.Show();
+        }
+
+        
+
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdiciona_Click(object sender, EventArgs e)
         {
             string nome = txtNome.Text;
             string email = txtEmail.Text;
@@ -98,9 +155,19 @@ namespace View
 
         }
 
-        private void FrmCliente_Load(object sender, EventArgs e)
+        private void btnPesquisa_Click_1(object sender, EventArgs e)
         {
-            carregaGridView();
+            FrmPesquisa f = new FrmPesquisa();
+            string txtBusca = "";
+
+            f.ShowDialog();
+            txtBusca = f.Texto;
+            DataTable tbClientes = _clienteService.filterByName(txtBusca);
+            if (tbClientes != null)
+            {
+                dgCliente.DataSource = tbClientes;
+                dgCliente.Refresh();
+            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -119,58 +186,7 @@ namespace View
             }
         }
 
-
-
-        private void dgCliente_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string id = dgCliente.Rows[e.RowIndex].Cells[0].Value.ToString();
-            codigo = int.Parse(id);
-            dgCliente.Refresh();
-        }
-
-        private void btnPesquisa_Click(object sender, EventArgs e)
-        {
-            FrmPesquisa f = new FrmPesquisa();
-            string txtBusca = "";
-
-            f.ShowDialog();
-            txtBusca = f.Texto;
-            DataTable tbClientes = _clienteService.filterByName(txtBusca);
-            if (tbClientes != null)
-            {
-                dgCliente.DataSource = tbClientes;
-                dgCliente.Refresh();
-            }
-        }
-
-        public void LimparText()
-        {
-            txtNome.Text = " ";
-            txtEmail.Text = " ";
-            txtCpf_Cnpj.Text = " ";
-            txtRg.Text = " ";
-            txtCelular.Text = " ";
-            txtSenha.Text = " ";
-        }
-
-
-        private void OpenFormInPanel(Form form, Panel panel)
-        {
-            if (panel.Controls.Count > 0)
-            {
-                panel.Controls[0].Dispose();
-            }
-
-            form.TopLevel = false;
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
-
-
-            panel.Controls.Add(form);
-            form.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnEndereco_Click(object sender, EventArgs e)
         {
             FrmEndereco frmendereco = new FrmEndereco();
             OpenFormInPanel(frmendereco, pEnd);
@@ -178,9 +194,14 @@ namespace View
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            string msg;
+            msg = "A operação foi Cancelada!";
+            MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            atualiza();
+            LimparText();
         }
     }
 }
-   
+
+
 

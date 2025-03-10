@@ -35,8 +35,8 @@
             this.btnEndereco = new System.Windows.Forms.Button();
             this.pEndereco = new System.Windows.Forms.Panel();
             this.dgEndereco = new System.Windows.Forms.DataGridView();
-            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.enderecoClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,11 +45,10 @@
             this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clienteCodigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pEndereco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelaConsulta
@@ -119,8 +118,7 @@
             this.bairroDataGridViewTextBoxColumn,
             this.cidadeDataGridViewTextBoxColumn,
             this.paisDataGridViewTextBoxColumn,
-            this.codigoDataGridViewTextBoxColumn,
-            this.clienteCodigoDataGridViewTextBoxColumn});
+            this.codigoDataGridViewTextBoxColumn});
             this.dgEndereco.DataSource = this.enderecoClienteBindingSource1;
             this.dgEndereco.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgEndereco.Location = new System.Drawing.Point(0, 0);
@@ -130,13 +128,13 @@
             this.dgEndereco.TabIndex = 0;
             this.dgEndereco.Visible = false;
             // 
-            // enderecoClienteBindingSource
-            // 
-            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
-            // 
             // enderecoClienteBindingSource1
             // 
             this.enderecoClienteBindingSource1.DataSource = typeof(Dados.Endereco_Cliente);
+            // 
+            // enderecoClienteBindingSource
+            // 
+            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
             // 
             // cEPDataGridViewTextBoxColumn
             // 
@@ -194,13 +192,6 @@
             this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
             this.codigoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // clienteCodigoDataGridViewTextBoxColumn
-            // 
-            this.clienteCodigoDataGridViewTextBoxColumn.DataPropertyName = "ClienteCodigo";
-            this.clienteCodigoDataGridViewTextBoxColumn.HeaderText = "ClienteCodigo";
-            this.clienteCodigoDataGridViewTextBoxColumn.Name = "clienteCodigoDataGridViewTextBoxColumn";
-            this.clienteCodigoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // FrmEndereco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,8 +209,8 @@
             this.Load += new System.EventHandler(this.FrmEndereco_Load);
             this.pEndereco.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,6 +225,7 @@
         private System.Windows.Forms.Panel pEndereco;
         private System.Windows.Forms.DataGridView dgEndereco;
         private System.Windows.Forms.BindingSource enderecoClienteBindingSource;
+        private System.Windows.Forms.BindingSource enderecoClienteBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn ruaDataGridViewTextBoxColumn;
@@ -242,7 +234,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paisDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clienteCodigoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource enderecoClienteBindingSource1;
     }
 }
