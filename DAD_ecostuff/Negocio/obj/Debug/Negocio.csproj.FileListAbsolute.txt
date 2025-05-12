@@ -124,7 +124,6 @@ C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\bin\Debug\System.Runtime.Co
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
-C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.dll
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.pdb
 C:\Users\massa\Downloads\DAD\DAD_ecostuff\Negocio\bin\Debug\Negocio.dll.config
@@ -348,3 +347,6 @@ C:\Users\aluno\Documents\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.csproj.CoreC
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.dll
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.pdb
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\bin\Debug\FluentValidation.dll
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\bin\Debug\FluentValidation.xml
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Negocio\obj\Debug\Negocio.csproj.Up2Date

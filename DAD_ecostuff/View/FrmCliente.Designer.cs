@@ -168,6 +168,7 @@
             this.dgCliente.ReadOnly = true;
             this.dgCliente.Size = new System.Drawing.Size(853, 359);
             this.dgCliente.TabIndex = 35;
+            this.dgCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCliente_CellClick);
             // 
             // codigoDataGridViewTextBoxColumn
             // 

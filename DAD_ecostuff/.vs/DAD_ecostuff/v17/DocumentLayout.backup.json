@@ -1,29 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\",
+  "WorkspaceRootPath": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\aluno\\desktop\\dad\\dad_ecostuff\\view\\frmcadendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\aluno\\source\\repos\\dad\\dad_ecostuff\\view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\aluno\\source\\repos\\dad\\dad_ecostuff\\view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\aluno\\source\\repos\\dad\\dad_ecostuff\\view\\frmcadendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890D5A5E-46A2-4AF2-B29E-0A40CDB21F74}|Dados\\Dados.csproj|C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\dados\\endereco_clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{890D5A5E-46A2-4AF2-B29E-0A40CDB21F74}|Dados\\Dados.csproj|C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\dados\\endereco_clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{890D5A5E-46A2-4AF2-B29E-0A40CDB21F74}|Dados\\Dados.csproj|solutionrelative:dados\\endereco_clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\aluno\\desktop\\dad\\dad_ecostuff\\view\\frmcadendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2916C34C-4DD9-4E6B-B6AB-F75D05BCED02}|Negocio\\Negocio.csproj|c:\\users\\aluno\\desktop\\dad\\dad_ecostuff\\negocio\\endereco_clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2916C34C-4DD9-4E6B-B6AB-F75D05BCED02}|Negocio\\Negocio.csproj|C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\negocio\\endereco_clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2916C34C-4DD9-4E6B-B6AB-F75D05BCED02}|Negocio\\Negocio.csproj|solutionrelative:negocio\\endereco_clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|c:\\users\\aluno\\desktop\\dad\\dad_ecostuff\\view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadplanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\view\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\view\\frmcadendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frmcadendereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\view\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E693D344-C403-4948-ADD4-AF2A7A84E02C}|View\\View.csproj|solutionrelative:view\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,25 +53,54 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "FrmCliente.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
+              "RelativeDocumentMoniker": "View\\FrmCliente.cs",
+              "ToolTip": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
+              "RelativeToolTip": "View\\FrmCliente.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAWwOEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:05:20.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmCliente.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs",
+              "RelativeDocumentMoniker": "View\\FrmCliente.cs",
+              "ToolTip": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCliente.cs [Design]",
+              "RelativeToolTip": "View\\FrmCliente.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T11:05:12.513Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Endereco_ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\Negocio\\Endereco_ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\Negocio\\Endereco_ClienteService.cs",
               "RelativeDocumentMoniker": "Negocio\\Endereco_ClienteService.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\Negocio\\Endereco_ClienteService.cs",
+              "ToolTip": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\Negocio\\Endereco_ClienteService.cs",
               "RelativeToolTip": "Negocio\\Endereco_ClienteService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAqwDwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T12:37:19.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Endereco_ClienteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\Dados\\Endereco_ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\Dados\\Endereco_ClienteRepository.cs",
               "RelativeDocumentMoniker": "Dados\\Endereco_ClienteRepository.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\Dados\\Endereco_ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\Dados\\Endereco_ClienteRepository.cs",
               "RelativeToolTip": "Dados\\Endereco_ClienteRepository.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAAAHkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -72,53 +109,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FrmCadEndereco.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmCadEndereco.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadEndereco.cs",
               "RelativeDocumentMoniker": "View\\FrmCadEndereco.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmCadEndereco.cs",
+              "ToolTip": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadEndereco.cs",
               "RelativeToolTip": "View\\FrmCadEndereco.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAqwGgAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T12:01:42.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FrmCadPlanta.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs",
               "RelativeDocumentMoniker": "View\\FrmCadPlanta.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs",
+              "ToolTip": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadPlanta.cs",
               "RelativeToolTip": "View\\FrmCadPlanta.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAgwLQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwv7UAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T11:55:44.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "FrmCadEndereco.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmCadEndereco.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmCadEndereco.cs",
               "RelativeDocumentMoniker": "View\\FrmCadEndereco.cs",
               "ToolTip": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmCadEndereco.cs [Design]",
-              "RelativeToolTip": "View\\FrmCadEndereco.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmCadEndereco.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:41:23.875Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-10T11:41:23.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FrmInicio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmInicio.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\source\\repos\\DAD\\DAD_ecostuff\\View\\FrmInicio.cs",
               "RelativeDocumentMoniker": "View\\FrmInicio.cs",
               "ToolTip": "C:\\Users\\aluno\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmInicio.cs [Design]",
-              "RelativeToolTip": "View\\FrmInicio.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\DAD\\DAD_ecostuff\\View\\FrmInicio.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T11:23:29.298Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-07T11:23:29.298Z"
             }
           ]
         }

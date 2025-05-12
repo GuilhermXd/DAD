@@ -19,7 +19,7 @@ namespace View
 {
     public partial class FrmCliente : Form
     {
-        int codigo = -1;
+        int codigo;
         private readonly ClienteService _clienteService;
         private readonly Endereco_ClienteService _enderecoService;
         DataTable dtCliente_Endereco = new DataTable();
@@ -64,13 +64,7 @@ namespace View
 
 
 
-        private void dgCliente_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string id = dgCliente.Rows[e.RowIndex].Cells[0].Value.ToString();
-            codigo = int.Parse(id);
-            dgCliente.Refresh();
-        }
-
+    
 
 
         public void LimparText()
@@ -169,10 +163,7 @@ namespace View
                 dgCliente.Refresh();
             }
         }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-            if (codigo == -1)
+        /*  if (codigo == -1)
                 MessageBox.Show("Selecione uma linha", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
             {
@@ -183,7 +174,34 @@ namespace View
                     MessageBox.Show("Cliente Removido com Sucesso", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     atualiza();
                 }
+            }*/
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            string resultado;
+            string msg;
+            DialogResult result = MessageBox.Show("Deseja confirmar exclusão?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                resultado = _clienteService.Remove(codigo);
+                atualiza();
+                if (resultado != "SUCESSO")
+                {
+                    msg = "A Operação Falhou";
+                }
+                else
+                {
+                    msg = "A operação foi um Sucesso!";
+                }
+                MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            if (result == DialogResult.No)
+            {
+                msg = "A operação foi Cancelada!";
+                MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            atualiza();
+
         }
 
         private void btnEndereco_Click(object sender, EventArgs e)
@@ -199,6 +217,13 @@ namespace View
             MessageBox.Show(msg, "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             atualiza();
             LimparText();
+        }
+
+        private void dgCliente_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string id = dgCliente.Rows[e.RowIndex].Cells[0].Value.ToString();
+            codigo = int.Parse(id);
+            dgCliente.Refresh();
         }
     }
 }

@@ -153,14 +153,10 @@ C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\bin\Debug\System.Numerics.Vect
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.AssemblyReference.cache
-C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.AboutBox1.resources
-C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmConsulta.resources
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmInicio.resources
-C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadastro.resources
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.Properties.Resources.resources
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.GenerateResource.cache
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.exe
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.pdb
 C:\Users\massa\Downloads\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.AssemblyReference.cache
@@ -442,3 +438,12 @@ C:\Users\aluno\Documents\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.Up2Date
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.exe
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.pdb
 C:\Users\aluno\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadEndereco.resources
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\bin\Debug\FluentValidation.dll
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\bin\Debug\FluentValidation.xml
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmAb.resources
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadEndereco.resources
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCliente.resources
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadPlanta.resources
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmEndereco.resources
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmPesquisa.resources
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.Up2Date

@@ -115,7 +115,6 @@ C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\bin\Debug\System.Runtime.Comp
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.csproj.AssemblyReference.cache
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.csproj.CoreCompileInputs.cache
-C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.csproj.CopyComplete
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.dll
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.pdb
 C:\Users\massa\Downloads\DAD\DAD_ecostuff\Dados\bin\Debug\Dados.dll.config
@@ -324,3 +323,6 @@ C:\Users\aluno\Documents\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.csproj.CoreCompi
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.csproj.Up2Date
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.dll
 C:\Users\aluno\Documents\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.pdb
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\bin\Debug\FluentValidation.dll
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\bin\Debug\FluentValidation.xml
+C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\Dados\obj\Debug\Dados.csproj.Up2Date
