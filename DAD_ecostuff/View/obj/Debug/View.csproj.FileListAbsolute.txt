@@ -447,3 +447,6 @@ C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadPlanta.re
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmEndereco.resources
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmPesquisa.resources
 C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.Up2Date
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadEndereco.resources
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmEndereco.resources
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmLogin.resources

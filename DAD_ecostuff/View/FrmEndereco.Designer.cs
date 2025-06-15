@@ -35,8 +35,6 @@
             this.btnEndereco = new System.Windows.Forms.Button();
             this.pEndereco = new System.Windows.Forms.Panel();
             this.dgEndereco = new System.Windows.Forms.DataGridView();
-            this.enderecoClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +43,8 @@
             this.cidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enderecoClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pEndereco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgEndereco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource1)).BeginInit();
@@ -56,7 +56,7 @@
             this.btnCancelaConsulta.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancelaConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelaConsulta.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelaConsulta.Location = new System.Drawing.Point(183, 61);
+            this.btnCancelaConsulta.Location = new System.Drawing.Point(25, 150);
             this.btnCancelaConsulta.Name = "btnCancelaConsulta";
             this.btnCancelaConsulta.Size = new System.Drawing.Size(163, 36);
             this.btnCancelaConsulta.TabIndex = 29;
@@ -67,15 +67,16 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 31);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(25, 41);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 13);
+            this.label7.Size = new System.Drawing.Size(166, 24);
             this.label7.TabIndex = 28;
             this.label7.Text = "Código do Cliente:";
             // 
             // txtCodEnd
             // 
-            this.txtCodEnd.Location = new System.Drawing.Point(121, 28);
+            this.txtCodEnd.Location = new System.Drawing.Point(49, 82);
             this.txtCodEnd.Name = "txtCodEnd";
             this.txtCodEnd.Size = new System.Drawing.Size(119, 20);
             this.txtCodEnd.TabIndex = 27;
@@ -85,7 +86,7 @@
             this.btnEndereco.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEndereco.Location = new System.Drawing.Point(14, 61);
+            this.btnEndereco.Location = new System.Drawing.Point(25, 108);
             this.btnEndereco.Name = "btnEndereco";
             this.btnEndereco.Size = new System.Drawing.Size(163, 36);
             this.btnEndereco.TabIndex = 26;
@@ -97,9 +98,9 @@
             // 
             this.pEndereco.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pEndereco.Controls.Add(this.dgEndereco);
-            this.pEndereco.Location = new System.Drawing.Point(14, 113);
+            this.pEndereco.Location = new System.Drawing.Point(14, 213);
             this.pEndereco.Name = "pEndereco";
-            this.pEndereco.Size = new System.Drawing.Size(369, 303);
+            this.pEndereco.Size = new System.Drawing.Size(177, 203);
             this.pEndereco.TabIndex = 25;
             this.pEndereco.Paint += new System.Windows.Forms.PaintEventHandler(this.pEndereco_Paint);
             // 
@@ -124,17 +125,9 @@
             this.dgEndereco.Location = new System.Drawing.Point(0, 0);
             this.dgEndereco.Name = "dgEndereco";
             this.dgEndereco.ReadOnly = true;
-            this.dgEndereco.Size = new System.Drawing.Size(369, 303);
+            this.dgEndereco.Size = new System.Drawing.Size(177, 203);
             this.dgEndereco.TabIndex = 0;
             this.dgEndereco.Visible = false;
-            // 
-            // enderecoClienteBindingSource1
-            // 
-            this.enderecoClienteBindingSource1.DataSource = typeof(Dados.Endereco_Cliente);
-            // 
-            // enderecoClienteBindingSource
-            // 
-            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
             // 
             // cEPDataGridViewTextBoxColumn
             // 
@@ -192,12 +185,20 @@
             this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
             this.codigoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // enderecoClienteBindingSource1
+            // 
+            this.enderecoClienteBindingSource1.DataSource = typeof(Dados.Endereco_Cliente);
+            // 
+            // enderecoClienteBindingSource
+            // 
+            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
+            // 
             // FrmEndereco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(395, 429);
+            this.ClientSize = new System.Drawing.Size(215, 429);
             this.Controls.Add(this.btnCancelaConsulta);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCodEnd);
