@@ -7,7 +7,6 @@
     <ProjectGuid>{E693D344-C403-4948-ADD4-AF2A7A84E02C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>View</RootNamespace>
-    
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -320,6 +319,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fndgeral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\FaleConosco.txt" />
+    <None Include="Resources\icons8-close-32.png" />
+    <None Include="Resources\icons8-minimize-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

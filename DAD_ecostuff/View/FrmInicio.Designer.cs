@@ -30,24 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             this.pMenu = new System.Windows.Forms.Panel();
-            this.btnEndereco = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lkFale = new System.Windows.Forms.LinkLabel();
+            this.pConfig = new System.Windows.Forms.Panel();
+            this.pForm = new System.Windows.Forms.Panel();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.btnOff = new System.Windows.Forms.Button();
+            this.btnEndereco = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnFrmCliente = new System.Windows.Forms.Button();
             this.btnFrmPlanta = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pConfig = new System.Windows.Forms.Panel();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            this.btnOff = new System.Windows.Forms.Button();
-            this.pForm = new System.Windows.Forms.Panel();
-            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.pMenu.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pConfig.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pMenu
@@ -65,21 +65,6 @@
             this.pMenu.Name = "pMenu";
             this.pMenu.Size = new System.Drawing.Size(200, 720);
             this.pMenu.TabIndex = 0;
-            // 
-            // btnEndereco
-            // 
-            this.btnEndereco.FlatAppearance.BorderSize = 0;
-            this.btnEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEndereco.Image = global::View.Properties.Resources.search_16dp_000000_FILL0_wght400_GRAD0_opsz20;
-            this.btnEndereco.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEndereco.Location = new System.Drawing.Point(3, 454);
-            this.btnEndereco.Name = "btnEndereco";
-            this.btnEndereco.Size = new System.Drawing.Size(194, 56);
-            this.btnEndereco.TabIndex = 4;
-            this.btnEndereco.Text = "        ENDEREÇOS";
-            this.btnEndereco.UseVisualStyleBackColor = true;
-            this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);
             // 
             // panel2
             // 
@@ -105,23 +90,91 @@
             this.lkFale.AutoSize = true;
             this.lkFale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkFale.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lkFale.Location = new System.Drawing.Point(57, 29);
+            this.lkFale.Location = new System.Drawing.Point(54, 27);
             this.lkFale.Name = "lkFale";
             this.lkFale.Size = new System.Drawing.Size(111, 20);
             this.lkFale.TabIndex = 5;
             this.lkFale.TabStop = true;
             this.lkFale.Text = "Fale Conosco!";
             this.lkFale.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lkFale.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkFale_LinkClicked);
+            // 
+            // pConfig
+            // 
+            this.pConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
+            this.pConfig.Controls.Add(this.btnMinimizar);
+            this.pConfig.Controls.Add(this.btnOff);
+            this.pConfig.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pConfig.Location = new System.Drawing.Point(200, 0);
+            this.pConfig.Name = "pConfig";
+            this.pConfig.Size = new System.Drawing.Size(1180, 36);
+            this.pConfig.TabIndex = 1;
+            // 
+            // pForm
+            // 
+            this.pForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pForm.Location = new System.Drawing.Point(200, 36);
+            this.pForm.Name = "pForm";
+            this.pForm.Size = new System.Drawing.Size(1180, 684);
+            this.pForm.TabIndex = 3;
+            this.pForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pForm_Paint);
+            // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.Image = global::View.Properties.Resources.icons8_minimize_32;
+            this.btnMinimizar.Location = new System.Drawing.Point(1086, 0);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(49, 40);
+            this.btnMinimizar.TabIndex = 3;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnOff
+            // 
+            this.btnOff.FlatAppearance.BorderSize = 0;
+            this.btnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOff.Image = global::View.Properties.Resources.icons8_close_32;
+            this.btnOff.Location = new System.Drawing.Point(1131, 0);
+            this.btnOff.Name = "btnOff";
+            this.btnOff.Size = new System.Drawing.Size(49, 40);
+            this.btnOff.TabIndex = 2;
+            this.btnOff.UseVisualStyleBackColor = true;
+            this.btnOff.Click += new System.EventHandler(this.btnOff_Click);
+            // 
+            // btnEndereco
+            // 
+            this.btnEndereco.FlatAppearance.BorderSize = 0;
+            this.btnEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEndereco.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEndereco.Image = global::View.Properties.Resources.icons8_search_302;
+            this.btnEndereco.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEndereco.Location = new System.Drawing.Point(3, 454);
+            this.btnEndereco.Name = "btnEndereco";
+            this.btnEndereco.Size = new System.Drawing.Size(194, 56);
+            this.btnEndereco.TabIndex = 4;
+            this.btnEndereco.Text = "        ENDEREÇOS";
+            this.btnEndereco.UseVisualStyleBackColor = true;
+            this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);
             // 
             // btnInfo
             // 
             this.btnInfo.FlatAppearance.BorderSize = 0;
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfo.Image = global::View.Properties.Resources.infoo;
+            this.btnInfo.Image = global::View.Properties.Resources.icons8_information_30;
             this.btnInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInfo.Location = new System.Drawing.Point(12, 25);
+            this.btnInfo.Location = new System.Drawing.Point(9, 12);
             this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(39, 30);
+            this.btnInfo.Size = new System.Drawing.Size(39, 53);
             this.btnInfo.TabIndex = 4;
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
@@ -131,7 +184,8 @@
             this.btnFrmCliente.FlatAppearance.BorderSize = 0;
             this.btnFrmCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFrmCliente.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFrmCliente.Image = global::View.Properties.Resources.search_16dp_000000_FILL0_wght400_GRAD0_opsz20;
+            this.btnFrmCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFrmCliente.Image = global::View.Properties.Resources.icons8_search_301;
             this.btnFrmCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFrmCliente.Location = new System.Drawing.Point(3, 372);
             this.btnFrmCliente.Name = "btnFrmCliente";
@@ -146,7 +200,8 @@
             this.btnFrmPlanta.FlatAppearance.BorderSize = 0;
             this.btnFrmPlanta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFrmPlanta.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFrmPlanta.Image = global::View.Properties.Resources.search_16dp_000000_FILL0_wght400_GRAD0_opsz20;
+            this.btnFrmPlanta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFrmPlanta.Image = global::View.Properties.Resources.icons8_search_30;
             this.btnFrmPlanta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFrmPlanta.Location = new System.Drawing.Point(3, 287);
             this.btnFrmPlanta.Name = "btnFrmPlanta";
@@ -161,7 +216,8 @@
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Image = global::View.Properties.Resources.icons8_casa_60;
+            this.btnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnHome.Image = global::View.Properties.Resources.icons8_home_30;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(3, 190);
             this.btnHome.Name = "btnHome";
@@ -182,57 +238,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pConfig
-            // 
-            this.pConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
-            this.pConfig.Controls.Add(this.btnMinimizar);
-            this.pConfig.Controls.Add(this.btnOff);
-            this.pConfig.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pConfig.Location = new System.Drawing.Point(200, 0);
-            this.pConfig.Name = "pConfig";
-            this.pConfig.Size = new System.Drawing.Size(1180, 36);
-            this.pConfig.TabIndex = 1;
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Image = global::View.Properties.Resources.minimizar;
-            this.btnMinimizar.Location = new System.Drawing.Point(1085, 0);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(49, 40);
-            this.btnMinimizar.TabIndex = 3;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnOff
-            // 
-            this.btnOff.FlatAppearance.BorderSize = 0;
-            this.btnOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOff.Image = global::View.Properties.Resources.icons8_desligar_32;
-            this.btnOff.Location = new System.Drawing.Point(1131, 0);
-            this.btnOff.Name = "btnOff";
-            this.btnOff.Size = new System.Drawing.Size(49, 40);
-            this.btnOff.TabIndex = 2;
-            this.btnOff.UseVisualStyleBackColor = true;
-            this.btnOff.Click += new System.EventHandler(this.btnOff_Click);
-            // 
-            // pForm
-            // 
-            this.pForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pForm.Location = new System.Drawing.Point(200, 36);
-            this.pForm.Name = "pForm";
-            this.pForm.Size = new System.Drawing.Size(1180, 684);
-            this.pForm.TabIndex = 3;
-            this.pForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pForm_Paint);
-            // 
-            // mySqlCommand1
-            // 
-            this.mySqlCommand1.CacheAge = 0;
-            this.mySqlCommand1.Connection = null;
-            this.mySqlCommand1.EnableCaching = false;
-            this.mySqlCommand1.Transaction = null;
-            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,8 +253,8 @@
             this.pMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pConfig.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -147,5 +147,27 @@ namespace View
             atualiza();
             LimpaText();
         }
+
+        private void dgCEndereco_SelectionChanged(object sender, EventArgs e)
+        {
+
+            DataGridView row = (DataGridView)sender;
+            if (row.CurrentRow == null)
+                return;
+            txtCep.Text = dgCEndereco.CurrentRow.Cells[0].Value.ToString();
+
+            txtRua.Text = dgCEndereco.CurrentRow.Cells[1].Value.ToString();
+
+            txtNumero.Text = dgCEndereco.CurrentRow.Cells[2].Value.ToString();
+
+            txtBairro.Text =
+             dgCEndereco.CurrentRow.Cells[3].Value.ToString();
+
+            txtCidade.Text = dgCEndereco.CurrentRow.Cells[4].Value.ToString();
+
+            txtPais.Text = dgCEndereco.CurrentRow.Cells[5].Value.ToString();
+
+            txtEstado.Text = dgCEndereco.CurrentRow.Cells[6].Value.ToString();
+        }
     }
     }

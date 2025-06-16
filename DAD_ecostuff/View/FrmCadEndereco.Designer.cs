@@ -271,6 +271,7 @@
             this.dgCEndereco.Size = new System.Drawing.Size(576, 150);
             this.dgCEndereco.TabIndex = 13;
             this.dgCEndereco.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCEndereco_CellClick);
+            this.dgCEndereco.SelectionChanged += new System.EventHandler(this.dgCEndereco_SelectionChanged);
             // 
             // cEPDataGridViewTextBoxColumn
             // 

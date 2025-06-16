@@ -207,5 +207,27 @@ namespace View
                 dgPlanta.Refresh();
             }
         }
+
+        private void dgPlanta_SelectionChanged(object sender, EventArgs e)
+        {
+            DataGridView row = (DataGridView)sender;
+            if (row.CurrentRow == null)
+                return;
+
+
+            txtNome.Text = dgPlanta.CurrentRow.Cells[1].Value.ToString();
+
+            txtNomeCientifico.Text = dgPlanta.CurrentRow.Cells[2].Value.ToString();
+
+            txtObservacoes.Text = dgPlanta.CurrentRow.Cells[3].Value.ToString();
+
+            txtData.Text = dgPlanta.CurrentRow.Cells[7].Value.ToString();
+
+            txtTipodeSolo.Text = dgPlanta.CurrentRow.Cells[6].Value.ToString();
+
+            txtCicloAgua.Text = dgPlanta.CurrentRow.Cells[4].Value.ToString();
+
+            txtCicloIluminacao.Text = dgPlanta.CurrentRow.Cells[5].Value.ToString();
+        }
     }
 }

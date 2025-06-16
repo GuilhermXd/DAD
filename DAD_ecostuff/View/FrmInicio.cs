@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,7 +70,33 @@ namespace View
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
-            
+            string caminhoArquivo = @"C:\Users\aluno\Desktop\DAD\DAD_ecostuff\fale-conosco.html";
+
+            string conteudoHtml =
+                @"<!DOCTYPE html>
+        <html>
+        <head>
+            <title>Fale Conosco</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1 { color: #0066cc; }
+                .contato { margin-top: 20px; line-height: 1.6; }
+            </style>
+        </head>
+        <body>
+            <h1>Fale Conosco</h1>
+            <div class='contato'>
+                <strong>Empresa:</strong> Sua Empresa Ltda.<br>
+                <strong>Telefone:</strong> (11) 1234-5678<br>
+                <strong>E-mail:</strong> contato@empresa.com<br>
+                <strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP<br>
+                <strong>Horário:</strong> Seg-Sex, 9h às 18h
+            </div>
+        </body>
+        </html>";
+
+            File.WriteAllText(caminhoArquivo, conteudoHtml);
+            System.Diagnostics.Process.Start(caminhoArquivo);
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -81,6 +108,38 @@ namespace View
         {
             FrmCadEndereco frmCadEndereco = new FrmCadEndereco();
             OpenFormInPanel(frmCadEndereco, pForm);
+        }
+
+        private void lkFale_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string caminhoArquivo = @"C:\Users\aluno\Desktop\DAD\DAD_ecostuff\fale-conosco.html";
+
+            string conteudoHtml =
+                @"<!DOCTYPE html>
+        <html>
+        <head>
+            <title>Fale Conosco</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px;}
+                h1 { color: #628067; }
+                    
+                .contato { margin-top: 20px; line-height: 1.6; }
+            </style>
+        </head>
+        <body>
+            <h1>Fale Conosco</h1>
+            <div class='contato'>
+                <strong>Empresa:</strong> EcoStuff.<br>
+                <strong>Telefone:</strong> (19) 99910-0212<br>
+                <strong>E-mail:</strong> ecostuff@empresa.com<br>
+                <strong>Endereço:</strong> R. Paschoal Marmo, 1888 - Jardim Nova Italia, Limeira - SP, 13484-431 /SP<br>
+                <strong>Horário:</strong> Seg-Sex, 9h às 16h
+            </div>
+        </body>
+        </html>";
+
+            File.WriteAllText(caminhoArquivo, conteudoHtml);
+            System.Diagnostics.Process.Start(caminhoArquivo);
         }
     }
 }
