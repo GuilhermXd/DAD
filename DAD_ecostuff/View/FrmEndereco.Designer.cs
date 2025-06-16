@@ -59,7 +59,7 @@
             this.btnCancelaConsulta.Location = new System.Drawing.Point(25, 150);
             this.btnCancelaConsulta.Name = "btnCancelaConsulta";
             this.btnCancelaConsulta.Size = new System.Drawing.Size(163, 36);
-            this.btnCancelaConsulta.TabIndex = 29;
+            this.btnCancelaConsulta.TabIndex = 3;
             this.btnCancelaConsulta.Text = "Cancelar";
             this.btnCancelaConsulta.UseVisualStyleBackColor = false;
             this.btnCancelaConsulta.Click += new System.EventHandler(this.btnCancelaConsulta_Click);
@@ -80,7 +80,7 @@
             this.txtCodEnd.Location = new System.Drawing.Point(49, 82);
             this.txtCodEnd.Name = "txtCodEnd";
             this.txtCodEnd.Size = new System.Drawing.Size(119, 20);
-            this.txtCodEnd.TabIndex = 27;
+            this.txtCodEnd.TabIndex = 1;
             // 
             // btnEndereco
             // 
@@ -90,7 +90,7 @@
             this.btnEndereco.Location = new System.Drawing.Point(25, 108);
             this.btnEndereco.Name = "btnEndereco";
             this.btnEndereco.Size = new System.Drawing.Size(163, 36);
-            this.btnEndereco.TabIndex = 26;
+            this.btnEndereco.TabIndex = 2;
             this.btnEndereco.Text = "Exibir Endereço";
             this.btnEndereco.UseVisualStyleBackColor = false;
             this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);

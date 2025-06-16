@@ -12,7 +12,8 @@ namespace Dados
 {
     public class ClienteValidator : AbstractValidator<Cliente>
     {
-        public ClienteValidator() {
+        public ClienteValidator()
+        {
             RuleFor(cliente => cliente.Nome)
                 .NotEmpty().WithMessage("Campo NOME é obrigatório!")
                 .Length(3, 50).WithMessage("Tamanho do campo NOME não pode estar vazio");
@@ -36,14 +37,22 @@ namespace Dados
      }).WithMessage("CPF ou CNPJ inválido!");
 
             RuleFor(cliente => cliente.Rg)
-                .NotEmpty().WithMessage("Campo RG é obrigatório!")
-                .Length(7, 12).WithMessage("Tamanho do campo RG deve estar entre 7 e 12 caracteres!")
-                .Must(rg => ValidacaoDocumentos.ValidarRg(rg)).WithMessage("RG inválido!");
+    .NotEmpty().WithMessage("Campo RG é obrigatório!")
+    .Length(7, 12).WithMessage("Tamanho do campo RG deve estar entre 7 e 12 caracteres!")
+    .Must(rg =>
+    {
+        // Remove formatação
+        var rgLimpo = rg.Trim().Replace(".", "").Replace("-", "");
+
+        // Verifica se não são todos dígitos iguais
+        return rgLimpo.Distinct().Count() > 1;
+    }).WithMessage("RG não pode ter todos os dígitos iguais!")
+    .Must(rg => ValidacaoDocumentos.ValidarRg(rg)).WithMessage("RG inválido!");
 
 
             RuleFor(cliente => cliente.Celular)
-                .NotEmpty().WithMessage("Campo CELULAR é obrigatório!")
-                .Matches(@"^\(\d{2}\) \d{5}-\d{4}$").WithMessage("O celular deve estar no formato (XX) XXXXX-XXXX.");
+                .NotEmpty().WithMessage("Campo CELULAR é obrigatório!");
+                
 
             RuleFor(cliente => cliente.Senha)
                 .NotEmpty().WithMessage("Campo SENHA é obrigatório!")
@@ -122,15 +131,18 @@ namespace Dados
         {
             rg = rg.Trim().Replace(".", "").Replace("-", "");
 
-            // RG geralmente tem 9 dígitos (alguns estados podem ter variações)
+            // Verifica se tem entre 7 e 12 dígitos e se são todos números
             if (rg.Length < 7 || rg.Length > 12 || !rg.All(char.IsDigit))
                 return false;
 
-            // Aqui você pode adicionar validações específicas por estado se necessário
-            // Esta é uma validação básica - validações mais rigorosas podem ser implementadas
+            // Verifica se todos os dígitos são iguais (ex: 1111111, 22222222, etc.)
+            if (rg.Distinct().Count() == 1)
+                return false;
 
+            // Aqui você pode adicionar validações específicas por estado se necessário
             return true;
         }
     }
 }
+
 

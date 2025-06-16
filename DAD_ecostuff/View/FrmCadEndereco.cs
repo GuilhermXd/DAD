@@ -103,7 +103,11 @@ namespace View
                 return;
             }
             string id = dgCEndereco.Rows[e.RowIndex].Cells[6].Value.ToString();
+            try { 
             codEnd = int.Parse(id);
+            } catch(Exception err){
+                MessageBox.Show("Erro ao selecionar o endereço: " + err.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             dgCEndereco.Refresh();
         }
 

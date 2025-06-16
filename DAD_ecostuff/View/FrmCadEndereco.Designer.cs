@@ -75,7 +75,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(797, 265);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(191, 48);
-            this.btnExcluir.TabIndex = 33;
+            this.btnExcluir.TabIndex = 11;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -85,7 +85,7 @@
             this.txtCep.Location = new System.Drawing.Point(238, 109);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(121, 20);
-            this.txtCep.TabIndex = 31;
+            this.txtCep.TabIndex = 1;
             // 
             // label7
             // 
@@ -106,7 +106,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(797, 191);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(191, 48);
-            this.btnCancelar.TabIndex = 29;
+            this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -119,7 +119,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(797, 109);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(191, 48);
-            this.btnSalvar.TabIndex = 28;
+            this.btnSalvar.TabIndex = 9;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -152,7 +152,7 @@
             this.txtRua.Location = new System.Drawing.Point(238, 150);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(121, 20);
-            this.txtRua.TabIndex = 23;
+            this.txtRua.TabIndex = 4;
             // 
             // label2
             // 
@@ -203,42 +203,42 @@
             this.txtBairro.Location = new System.Drawing.Point(429, 109);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(121, 20);
-            this.txtBairro.TabIndex = 40;
+            this.txtBairro.TabIndex = 2;
             // 
             // txtPais
             // 
             this.txtPais.Location = new System.Drawing.Point(429, 147);
             this.txtPais.Name = "txtPais";
             this.txtPais.Size = new System.Drawing.Size(121, 20);
-            this.txtPais.TabIndex = 41;
+            this.txtPais.TabIndex = 5;
             // 
             // txtEstado
             // 
             this.txtEstado.Location = new System.Drawing.Point(642, 109);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(121, 20);
-            this.txtEstado.TabIndex = 42;
+            this.txtEstado.TabIndex = 3;
             // 
             // txtNumero
             // 
             this.txtNumero.Location = new System.Drawing.Point(642, 147);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(121, 20);
-            this.txtNumero.TabIndex = 43;
+            this.txtNumero.TabIndex = 6;
             // 
             // txtCidade
             // 
             this.txtCidade.Location = new System.Drawing.Point(243, 187);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(121, 20);
-            this.txtCidade.TabIndex = 44;
+            this.txtCidade.TabIndex = 7;
             // 
             // txtCodCliente
             // 
             this.txtCodCliente.Location = new System.Drawing.Point(515, 187);
             this.txtCodCliente.Name = "txtCodCliente";
             this.txtCodCliente.Size = new System.Drawing.Size(121, 20);
-            this.txtCodCliente.TabIndex = 45;
+            this.txtCodCliente.TabIndex = 8;
             // 
             // label6
             // 
@@ -269,7 +269,7 @@
             this.dgCEndereco.Location = new System.Drawing.Point(161, 265);
             this.dgCEndereco.Name = "dgCEndereco";
             this.dgCEndereco.Size = new System.Drawing.Size(576, 150);
-            this.dgCEndereco.TabIndex = 47;
+            this.dgCEndereco.TabIndex = 13;
             this.dgCEndereco.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCEndereco_CellClick);
             // 
             // cEPDataGridViewTextBoxColumn

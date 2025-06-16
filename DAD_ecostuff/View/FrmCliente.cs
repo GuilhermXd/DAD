@@ -33,7 +33,8 @@ namespace View
         {
             InitializeComponent();
             _clienteService = new ClienteService();
-
+            txtSenha.UseSystemPasswordChar = true;
+            this.AcceptButton = btnAdiciona;
 
             _enderecoService = new Endereco_ClienteService();
         }

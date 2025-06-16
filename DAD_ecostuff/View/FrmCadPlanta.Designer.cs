@@ -49,17 +49,17 @@ namespace View
             this.label7 = new System.Windows.Forms.Label();
             this.txtNomeCientifico = new System.Windows.Forms.TextBox();
             this.dgPlanta = new System.Windows.Forms.DataGridView();
+            this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome_cientifico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observacoesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ciclodeagua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cicloiluminacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiposolo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Datadeverificacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plantaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnPesquisa = new System.Windows.Forms.Button();
-            this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.observacoesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plantaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.plantaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
@@ -74,7 +74,7 @@ namespace View
             this.txtNome.Location = new System.Drawing.Point(256, 137);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(121, 20);
-            this.txtNome.TabIndex = 0;
+            this.txtNome.TabIndex = 2;
             // 
             // label1
             // 
@@ -94,7 +94,7 @@ namespace View
             this.txtObservacoes.Multiline = true;
             this.txtObservacoes.Name = "txtObservacoes";
             this.txtObservacoes.Size = new System.Drawing.Size(183, 58);
-            this.txtObservacoes.TabIndex = 2;
+            this.txtObservacoes.TabIndex = 3;
             // 
             // lblObs
             // 
@@ -154,7 +154,7 @@ namespace View
             this.txtData.Name = "txtData";
             this.txtData.ReadOnly = true;
             this.txtData.Size = new System.Drawing.Size(121, 20);
-            this.txtData.TabIndex = 9;
+            this.txtData.TabIndex = 5;
             this.txtData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtCicloAgua
@@ -163,7 +163,7 @@ namespace View
             this.txtCicloAgua.Location = new System.Drawing.Point(439, 77);
             this.txtCicloAgua.Name = "txtCicloAgua";
             this.txtCicloAgua.Size = new System.Drawing.Size(121, 20);
-            this.txtCicloAgua.TabIndex = 10;
+            this.txtCicloAgua.TabIndex = 8;
             this.txtCicloAgua.Text = "Em Horas";
             this.txtCicloAgua.Enter += new System.EventHandler(this.TextBox_Enter);
             this.txtCicloAgua.Leave += new System.EventHandler(this.Textbox_Leave);
@@ -174,7 +174,7 @@ namespace View
             this.txtCicloIluminacao.Location = new System.Drawing.Point(172, 77);
             this.txtCicloIluminacao.Name = "txtCicloIluminacao";
             this.txtCicloIluminacao.Size = new System.Drawing.Size(121, 20);
-            this.txtCicloIluminacao.TabIndex = 11;
+            this.txtCicloIluminacao.TabIndex = 6;
             this.txtCicloIluminacao.Text = "Em Horas";
             this.txtCicloIluminacao.Enter += new System.EventHandler(this.TextBox_Enter);
             this.txtCicloIluminacao.Leave += new System.EventHandler(this.Textbox_Leave);
@@ -186,7 +186,7 @@ namespace View
             this.txtTipodeSolo.Name = "txtTipodeSolo";
             this.txtTipodeSolo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtTipodeSolo.Size = new System.Drawing.Size(121, 20);
-            this.txtTipodeSolo.TabIndex = 12;
+            this.txtTipodeSolo.TabIndex = 7;
             this.txtTipodeSolo.Text = "Seco, Molhado...";
             this.txtTipodeSolo.Enter += new System.EventHandler(this.TextBox_Enter);
             this.txtTipodeSolo.Leave += new System.EventHandler(this.Textbox_Leave);
@@ -199,7 +199,7 @@ namespace View
             this.btnSalvar.Location = new System.Drawing.Point(754, 99);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(191, 48);
-            this.btnSalvar.TabIndex = 14;
+            this.btnSalvar.TabIndex = 9;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -219,7 +219,7 @@ namespace View
             this.groupBox1.Location = new System.Drawing.Point(84, 192);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(610, 134);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do plantio";
             // 
@@ -231,7 +231,7 @@ namespace View
             this.btnCancelar.Location = new System.Drawing.Point(754, 159);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(191, 48);
-            this.btnCancelar.TabIndex = 16;
+            this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancela_Click);
@@ -252,7 +252,7 @@ namespace View
             this.txtNomeCientifico.Location = new System.Drawing.Point(256, 99);
             this.txtNomeCientifico.Name = "txtNomeCientifico";
             this.txtNomeCientifico.Size = new System.Drawing.Size(121, 20);
-            this.txtNomeCientifico.TabIndex = 18;
+            this.txtNomeCientifico.TabIndex = 1;
             // 
             // dgPlanta
             // 
@@ -276,8 +276,22 @@ namespace View
             this.dgPlanta.Name = "dgPlanta";
             this.dgPlanta.ReadOnly = true;
             this.dgPlanta.Size = new System.Drawing.Size(868, 248);
-            this.dgPlanta.TabIndex = 19;
+            this.dgPlanta.TabIndex = 13;
             this.dgPlanta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPlanta_CellClick);
+            // 
+            // codigoDataGridViewTextBoxColumn
+            // 
+            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
+            this.codigoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Nome_cientifico
             // 
@@ -286,6 +300,13 @@ namespace View
             this.Nome_cientifico.Name = "Nome_cientifico";
             this.Nome_cientifico.ReadOnly = true;
             this.Nome_cientifico.Width = 125;
+            // 
+            // observacoesDataGridViewTextBoxColumn
+            // 
+            this.observacoesDataGridViewTextBoxColumn.DataPropertyName = "Observacoes";
+            this.observacoesDataGridViewTextBoxColumn.HeaderText = "Observacoes";
+            this.observacoesDataGridViewTextBoxColumn.Name = "observacoesDataGridViewTextBoxColumn";
+            this.observacoesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Ciclodeagua
             // 
@@ -315,6 +336,10 @@ namespace View
             this.Datadeverificacao.Name = "Datadeverificacao";
             this.Datadeverificacao.ReadOnly = true;
             // 
+            // plantaBindingSource1
+            // 
+            this.plantaBindingSource1.DataSource = typeof(Dados.Planta);
+            // 
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -324,7 +349,7 @@ namespace View
             this.btnExcluir.Location = new System.Drawing.Point(754, 219);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(191, 48);
-            this.btnExcluir.TabIndex = 20;
+            this.btnExcluir.TabIndex = 11;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -339,35 +364,10 @@ namespace View
             this.btnPesquisa.Location = new System.Drawing.Point(754, 284);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(191, 56);
-            this.btnPesquisa.TabIndex = 22;
+            this.btnPesquisa.TabIndex = 12;
             this.btnPesquisa.Text = "Pesquisar";
             this.btnPesquisa.UseVisualStyleBackColor = false;
             this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
-            // 
-            // codigoDataGridViewTextBoxColumn
-            // 
-            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
-            this.codigoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // observacoesDataGridViewTextBoxColumn
-            // 
-            this.observacoesDataGridViewTextBoxColumn.DataPropertyName = "Observacoes";
-            this.observacoesDataGridViewTextBoxColumn.HeaderText = "Observacoes";
-            this.observacoesDataGridViewTextBoxColumn.Name = "observacoesDataGridViewTextBoxColumn";
-            this.observacoesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // plantaBindingSource1
-            // 
-            this.plantaBindingSource1.DataSource = typeof(Dados.Planta);
             // 
             // pictureBox1
             // 

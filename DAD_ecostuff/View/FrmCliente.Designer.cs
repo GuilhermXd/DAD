@@ -37,6 +37,14 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgCliente = new System.Windows.Forms.DataGridView();
+            this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpfCnpjDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -48,14 +56,6 @@
             this.txtCpf_Cnpj = new System.Windows.Forms.TextBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtRg = new System.Windows.Forms.TextBox();
-            this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cpfCnpjDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnPesquisa = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -85,7 +85,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(276, 139);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(191, 48);
-            this.btnCancelar.TabIndex = 40;
+            this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -98,7 +98,7 @@
             this.btnEndereco.Location = new System.Drawing.Point(670, 50);
             this.btnEndereco.Name = "btnEndereco";
             this.btnEndereco.Size = new System.Drawing.Size(191, 48);
-            this.btnEndereco.TabIndex = 39;
+            this.btnEndereco.TabIndex = 10;
             this.btnEndereco.Text = "Buscar Endereço";
             this.btnEndereco.UseVisualStyleBackColor = false;
             this.btnEndereco.Click += new System.EventHandler(this.btnEndereco_Click);
@@ -159,112 +159,8 @@
             this.dgCliente.Name = "dgCliente";
             this.dgCliente.ReadOnly = true;
             this.dgCliente.Size = new System.Drawing.Size(853, 359);
-            this.dgCliente.TabIndex = 35;
+            this.dgCliente.TabIndex = 11;
             this.dgCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCliente_CellClick);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(470, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 16);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Rg:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 16);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Celular:";
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(473, 139);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(191, 48);
-            this.btnExcluir.TabIndex = 36;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(251, 82);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 16);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Senha:";
-            // 
-            // btnAdiciona
-            // 
-            this.btnAdiciona.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdiciona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdiciona.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdiciona.Location = new System.Drawing.Point(79, 139);
-            this.btnAdiciona.Name = "btnAdiciona";
-            this.btnAdiciona.Size = new System.Drawing.Size(191, 48);
-            this.btnAdiciona.TabIndex = 34;
-            this.btnAdiciona.Text = "Adicionar";
-            this.btnAdiciona.UseVisualStyleBackColor = false;
-            this.btnAdiciona.Click += new System.EventHandler(this.btnAdiciona_Click);
-            // 
-            // txtNome
-            // 
-            this.txtNome.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtNome.Location = new System.Drawing.Point(134, 30);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(100, 20);
-            this.txtNome.TabIndex = 28;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.Color.White;
-            this.txtEmail.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtEmail.Location = new System.Drawing.Point(301, 30);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
-            this.txtEmail.TabIndex = 29;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(306, 82);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(100, 20);
-            this.txtSenha.TabIndex = 33;
-            // 
-            // txtCpf_Cnpj
-            // 
-            this.txtCpf_Cnpj.Location = new System.Drawing.Point(504, 30);
-            this.txtCpf_Cnpj.Name = "txtCpf_Cnpj";
-            this.txtCpf_Cnpj.Size = new System.Drawing.Size(100, 20);
-            this.txtCpf_Cnpj.TabIndex = 30;
-            // 
-            // txtCelular
-            // 
-            this.txtCelular.Location = new System.Drawing.Point(139, 82);
-            this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(100, 20);
-            this.txtCelular.TabIndex = 32;
-            // 
-            // txtRg
-            // 
-            this.txtRg.Location = new System.Drawing.Point(504, 82);
-            this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(100, 20);
-            this.txtRg.TabIndex = 31;
             // 
             // codigoDataGridViewTextBoxColumn
             // 
@@ -322,6 +218,116 @@
             // 
             this.clienteBindingSource.DataSource = typeof(Dados.Cliente);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(470, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(28, 16);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Rg:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(17, 83);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Celular:";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(473, 139);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(191, 48);
+            this.btnExcluir.TabIndex = 8;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(251, 82);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 16);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Senha:";
+            // 
+            // btnAdiciona
+            // 
+            this.btnAdiciona.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAdiciona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdiciona.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdiciona.Location = new System.Drawing.Point(79, 139);
+            this.btnAdiciona.Name = "btnAdiciona";
+            this.btnAdiciona.Size = new System.Drawing.Size(191, 48);
+            this.btnAdiciona.TabIndex = 6;
+            this.btnAdiciona.Text = "Adicionar";
+            this.btnAdiciona.UseVisualStyleBackColor = false;
+            this.btnAdiciona.Click += new System.EventHandler(this.btnAdiciona_Click);
+            // 
+            // txtNome
+            // 
+            this.txtNome.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtNome.Location = new System.Drawing.Point(134, 30);
+            this.txtNome.MaxLength = 50;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(100, 20);
+            this.txtNome.TabIndex = 0;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.White;
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtEmail.Location = new System.Drawing.Point(301, 30);
+            this.txtEmail.MaxLength = 50;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 1;
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(306, 82);
+            this.txtSenha.MaxLength = 20;
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtSenha.TabIndex = 4;
+            // 
+            // txtCpf_Cnpj
+            // 
+            this.txtCpf_Cnpj.Location = new System.Drawing.Point(504, 30);
+            this.txtCpf_Cnpj.MaxLength = 14;
+            this.txtCpf_Cnpj.Name = "txtCpf_Cnpj";
+            this.txtCpf_Cnpj.Size = new System.Drawing.Size(100, 20);
+            this.txtCpf_Cnpj.TabIndex = 2;
+            // 
+            // txtCelular
+            // 
+            this.txtCelular.Location = new System.Drawing.Point(139, 82);
+            this.txtCelular.MaxLength = 11;
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.Size = new System.Drawing.Size(100, 20);
+            this.txtCelular.TabIndex = 3;
+            // 
+            // txtRg
+            // 
+            this.txtRg.Location = new System.Drawing.Point(504, 82);
+            this.txtRg.MaxLength = 9;
+            this.txtRg.Name = "txtRg";
+            this.txtRg.Size = new System.Drawing.Size(100, 20);
+            this.txtRg.TabIndex = 5;
+            // 
             // btnPesquisa
             // 
             this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -332,7 +338,7 @@
             this.btnPesquisa.Location = new System.Drawing.Point(670, 139);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(191, 48);
-            this.btnPesquisa.TabIndex = 37;
+            this.btnPesquisa.TabIndex = 9;
             this.btnPesquisa.Text = "  Pesquisar";
             this.btnPesquisa.UseVisualStyleBackColor = false;
             this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click_1);
