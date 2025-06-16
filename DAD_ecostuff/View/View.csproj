@@ -7,7 +7,7 @@
     <ProjectGuid>{E693D344-C403-4948-ADD4-AF2A7A84E02C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>View</RootNamespace>
-    <AssemblyName>AutoBox1.cs</AssemblyName>
+    
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -311,6 +311,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EFETUA O LOGIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciopage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fndgeral.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

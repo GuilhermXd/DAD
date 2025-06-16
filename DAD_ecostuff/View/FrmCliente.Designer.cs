@@ -37,7 +37,6 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgCliente = new System.Windows.Forms.DataGridView();
-            this.btnPesquisa = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -49,7 +48,6 @@
             this.txtCpf_Cnpj = new System.Windows.Forms.TextBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtRg = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,11 +56,13 @@
             this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@
             // 
             // pEnd
             // 
-            this.pEnd.Location = new System.Drawing.Point(967, 50);
+            this.pEnd.Location = new System.Drawing.Point(938, 50);
             this.pEnd.Name = "pEnd";
             this.pEnd.Size = new System.Drawing.Size(215, 429);
             this.pEnd.TabIndex = 41;
@@ -142,7 +142,7 @@
             this.dgCliente.AllowUserToAddRows = false;
             this.dgCliente.AllowUserToDeleteRows = false;
             this.dgCliente.AutoGenerateColumns = false;
-            this.dgCliente.BackgroundColor = System.Drawing.Color.MediumAquamarine;
+            this.dgCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
             this.dgCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgCliente.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -161,21 +161,6 @@
             this.dgCliente.Size = new System.Drawing.Size(853, 359);
             this.dgCliente.TabIndex = 35;
             this.dgCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCliente_CellClick);
-            // 
-            // btnPesquisa
-            // 
-            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_501;
-            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisa.Location = new System.Drawing.Point(670, 139);
-            this.btnPesquisa.Name = "btnPesquisa";
-            this.btnPesquisa.Size = new System.Drawing.Size(191, 48);
-            this.btnPesquisa.TabIndex = 37;
-            this.btnPesquisa.Text = "  Pesquisar";
-            this.btnPesquisa.UseVisualStyleBackColor = false;
-            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click_1);
             // 
             // label4
             // 
@@ -281,18 +266,6 @@
             this.txtRg.Size = new System.Drawing.Size(100, 20);
             this.txtRg.TabIndex = 31;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::View.Properties.Resources.tab;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1619, 933);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // codigoDataGridViewTextBoxColumn
             // 
             this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
@@ -349,6 +322,33 @@
             // 
             this.clienteBindingSource.DataSource = typeof(Dados.Cliente);
             // 
+            // btnPesquisa
+            // 
+            this.btnPesquisa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisa.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisa.Image = global::View.Properties.Resources.icons8_pesquisar_501;
+            this.btnPesquisa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisa.Location = new System.Drawing.Point(670, 139);
+            this.btnPesquisa.Name = "btnPesquisa";
+            this.btnPesquisa.Size = new System.Drawing.Size(191, 48);
+            this.btnPesquisa.TabIndex = 37;
+            this.btnPesquisa.Text = "  Pesquisar";
+            this.btnPesquisa.UseVisualStyleBackColor = false;
+            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::View.Properties.Resources.fndgeral;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1619, 933);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // enderecoClienteBindingSource
             // 
             this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
@@ -383,8 +383,8 @@
             this.Load += new System.EventHandler(this.FrmCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

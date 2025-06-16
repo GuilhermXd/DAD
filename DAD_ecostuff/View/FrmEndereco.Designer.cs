@@ -68,6 +68,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label7.Location = new System.Drawing.Point(25, 41);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 24);
@@ -109,7 +110,7 @@
             this.dgEndereco.AllowUserToAddRows = false;
             this.dgEndereco.AllowUserToDeleteRows = false;
             this.dgEndereco.AutoGenerateColumns = false;
-            this.dgEndereco.BackgroundColor = System.Drawing.Color.ForestGreen;
+            this.dgEndereco.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
             this.dgEndereco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgEndereco.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cEPDataGridViewTextBoxColumn,
@@ -197,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
             this.ClientSize = new System.Drawing.Size(215, 429);
             this.Controls.Add(this.btnCancelaConsulta);
             this.Controls.Add(this.label7);

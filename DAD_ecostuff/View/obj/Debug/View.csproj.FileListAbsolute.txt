@@ -321,9 +321,6 @@ C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmInicio.res
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadPlanta.resources
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.FrmPesquisa.resources
 C:\Users\Usuario\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.TesteIncioBonito.resources
-C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\AutoBox1.cs.exe.config
-C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\AutoBox1.cs.exe
-C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\AutoBox1.cs.pdb
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\BouncyCastle.Cryptography.dll
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\Dados.dll
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\Google.Protobuf.dll
@@ -370,8 +367,6 @@ C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.Properties.Resources
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.GenerateResource.cache
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.Up2Date
-C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.exe
-C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\AutoBox1.cs.pdb
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmAb.resources
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmInicio.resources
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\FluentValidation.dll
@@ -450,3 +445,8 @@ C:\Users\aluno\Source\Repos\DAD\DAD_ecostuff\View\obj\Debug\View.csproj.Up2Date
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmCadEndereco.resources
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmEndereco.resources
 C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.FrmLogin.resources
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\View.exe.config
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\View.exe
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\bin\Debug\View.pdb
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.exe
+C:\Users\massa\Desktop\DAD\DAD_ecostuff\View\obj\Debug\View.pdb

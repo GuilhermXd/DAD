@@ -52,7 +52,7 @@
             // 
             // pMenu
             // 
-            this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(94)))), ((int)(((byte)(76)))));
+            this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
             this.pMenu.Controls.Add(this.btnEndereco);
             this.pMenu.Controls.Add(this.panel2);
             this.pMenu.Controls.Add(this.panel1);
@@ -100,7 +100,7 @@
             // 
             // pConfig
             // 
-            this.pConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(94)))), ((int)(((byte)(76)))));
+            this.pConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
             this.pConfig.Controls.Add(this.btnMinimizar);
             this.pConfig.Controls.Add(this.btnOff);
             this.pConfig.Dock = System.Windows.Forms.DockStyle.Top;
@@ -224,9 +224,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(94)))), ((int)(((byte)(76)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(80)))), ((int)(((byte)(67)))));
             this.pictureBox1.Image = global::View.Properties.Resources.Logo__1___1_;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(197, 162);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

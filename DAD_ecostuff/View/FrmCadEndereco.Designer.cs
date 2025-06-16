@@ -37,7 +37,6 @@
             this.lblObs = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtRua = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,9 +48,7 @@
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtCodCliente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dgCEndereco = new System.Windows.Forms.DataGridView();
-            this.enderecoClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,10 +57,13 @@
             this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
+            this.enderecoClienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.enderecoClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgCEndereco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExcluir
@@ -153,17 +153,6 @@
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(121, 20);
             this.txtRua.TabIndex = 23;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::View.Properties.Resources.Design_sem_nome__1_3;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1357, 691);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -262,10 +251,6 @@
             this.label6.TabIndex = 46;
             this.label6.Text = "Código do Cliente";
             // 
-            // enderecoClienteBindingSource
-            // 
-            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
-            // 
             // dgCEndereco
             // 
             this.dgCEndereco.AutoGenerateColumns = false;
@@ -286,10 +271,6 @@
             this.dgCEndereco.Size = new System.Drawing.Size(576, 150);
             this.dgCEndereco.TabIndex = 47;
             this.dgCEndereco.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCEndereco_CellClick);
-            // 
-            // enderecoClienteBindingSource1
-            // 
-            this.enderecoClienteBindingSource1.DataSource = typeof(Dados.Endereco_Cliente);
             // 
             // cEPDataGridViewTextBoxColumn
             // 
@@ -339,6 +320,25 @@
             this.estadoDataGridViewTextBoxColumn.HeaderText = "Estado";
             this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
             // 
+            // enderecoClienteBindingSource1
+            // 
+            this.enderecoClienteBindingSource1.DataSource = typeof(Dados.Endereco_Cliente);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::View.Properties.Resources.fndgeral1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1357, 691);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
+            // enderecoClienteBindingSource
+            // 
+            this.enderecoClienteBindingSource.DataSource = typeof(Dados.Endereco_Cliente);
+            // 
             // FrmCadEndereco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,10 +368,10 @@
             this.Name = "FrmCadEndereco";
             this.Text = "FrmCadEndereco";
             this.Load += new System.EventHandler(this.FrmCadEndereco_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCEndereco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enderecoClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

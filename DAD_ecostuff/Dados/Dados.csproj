@@ -96,6 +96,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adm.cs" />
+    <Compile Include="AdmValidator.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="ClienteRepository.cs" />
     <Compile Include="ClienteValidator.cs" />

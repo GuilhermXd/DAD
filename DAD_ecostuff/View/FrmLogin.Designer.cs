@@ -29,22 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
-            this.btnOff = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
+            this.btnOff = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(94)))), ((int)(((byte)(76)))));
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::View.Properties.Resources.EFETUA_O_LOGIN;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // txtUser
             // 
@@ -64,16 +57,15 @@
             this.btnEntrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
-            // btnOff
+            // button1
             // 
-            this.btnOff.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnOff.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnOff, "btnOff");
-            this.btnOff.Image = global::View.Properties.Resources.icons8_desligar_32;
-            this.btnOff.Name = "btnOff";
-            this.btnOff.UseVisualStyleBackColor = false;
-            this.btnOff.Click += new System.EventHandler(this.btnOff_Click);
+            this.button1.Image = global::View.Properties.Resources.images__1_;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnMinimizar
             // 
@@ -85,10 +77,29 @@
             this.btnMinimizar.UseVisualStyleBackColor = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
+            // btnOff
+            // 
+            this.btnOff.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnOff.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnOff, "btnOff");
+            this.btnOff.Image = global::View.Properties.Resources.icons8_desligar_32;
+            this.btnOff.Name = "btnOff";
+            this.btnOff.UseVisualStyleBackColor = false;
+            this.btnOff.Click += new System.EventHandler(this.btnOff_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(94)))), ((int)(((byte)(76)))));
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::View.Properties.Resources.EFETUA_O_LOGIN;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmLogin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnOff);
             this.Controls.Add(this.btnEntrar);
@@ -111,5 +122,6 @@
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnOff;
         private System.Windows.Forms.Button btnMinimizar;
+        private System.Windows.Forms.Button button1;
     }
 }
